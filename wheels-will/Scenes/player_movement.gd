@@ -32,9 +32,11 @@ func _physics_process(delta: float):
 		
 func _input(_event: InputEvent) -> void:
 	if bet_active != null :
-		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_A) :
+		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_A) && !list_bet.is_empty() :
 			if bet_active.activebet :
 				bet_active.bet_actions(list_bet.pop_at(_n))
+				if(_n > 0) :
+					_n = _n-1
 				$Ressources.hide()	
 				$UI_Player.hide()
 
@@ -42,10 +44,11 @@ func _input(_event: InputEvent) -> void:
 			_n = _n+1
 		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_LEFT_SHOULDER) && _n > 0 :
 			_n = _n-1
-		$Ressources.text = str(list_bet[_n])
-		if bet_active.activebet :
-			$Ressources.show()
-			$UI_Player.show()
+		if !list_bet.is_empty() :
+			$Ressources.text = str(list_bet[_n])
+			if bet_active.activebet :
+				$Ressources.show()
+				$UI_Player.show()
 	else :
 		$Ressources.hide()	
 		$UI_Player.hide()
