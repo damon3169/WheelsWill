@@ -10,4 +10,8 @@ horseWeigh = Array[float]([0.0, 25.0, 25.0, 25.0, 25.0, 100.0, 200.0])
 
 [node name="Player" parent="." unique_id=1950543396 instance=ExtResource("2_tr2i4")]
 
+[node name="Player2" parent="." unique_id=630362392 instance=ExtResource("2_tr2i4")]
+position = Vector2(147, 31)
+player_index = 1
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=822558824]
