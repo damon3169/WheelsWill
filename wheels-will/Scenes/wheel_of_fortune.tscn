@@ -3,56 +3,55 @@
 [ext_resource type="Script" uid="uid://c7ujkrr4qocvb" path="res://Scripts/wheel_of_fortuneCreate.gd" id="1_sgfco"]
 [ext_resource type="Script" uid="uid://b07s0qb0yhxel" path="res://Scenes/wheel_colision_horse.gd" id="2_nr2l6"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_nr2l6"]
-radius = 2.0
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_nr2l6"]
+b = Vector2(0, 2)
 
 [node name="WheelOfFortune" type="Node2D" unique_id=957966518]
 script = ExtResource("1_sgfco")
 inner_radius = 1
-horseWeigh = Array[float]([400.0, 300.0, 300.0, 200.0, 200.0, 100.0])
-horsePercentageGain = Array[float]([10.0, 20.0, 20.0, 40.0, 40.0, 80.0])
+horseWeigh = Array[float]([20.0, 80.0, 30.0, 25.0, 80.0, 30.0])
 horseColor = Array[Color]([Color(0, 0.8352941, 0, 1), Color(1, 0, 0, 1), Color(0, 0, 1, 1), Color(0.9118431, 0.7743093, 1.540184e-06, 1), Color(0.93171465, 0.15841353, 0.64683217, 1), Color(0, 0.5585161, 0.6640863, 1)])
 
 [node name="wheelColisionHorse" type="Area2D" parent="." unique_id=650631930 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheelColisionHorse" unique_id=1914997780]
-shape = SubResource("CircleShape2D_nr2l6")
+shape = SubResource("SegmentShape2D_nr2l6")
 
 [node name="wheelColisionHorse2" type="Area2D" parent="." unique_id=388046064 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
 id = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheelColisionHorse2" unique_id=1188594766]
-shape = SubResource("CircleShape2D_nr2l6")
+shape = SubResource("SegmentShape2D_nr2l6")
 
 [node name="wheelColisionHorse3" type="Area2D" parent="." unique_id=1158881817 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
 id = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheelColisionHorse3" unique_id=1903136592]
-shape = SubResource("CircleShape2D_nr2l6")
+shape = SubResource("SegmentShape2D_nr2l6")
 
 [node name="wheelColisionHorse4" type="Area2D" parent="." unique_id=251388761 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
 id = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheelColisionHorse4" unique_id=522988385]
-shape = SubResource("CircleShape2D_nr2l6")
+shape = SubResource("SegmentShape2D_nr2l6")
 
 [node name="wheelColisionHorse5" type="Area2D" parent="." unique_id=2112093094 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
 id = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheelColisionHorse5" unique_id=470721410]
-shape = SubResource("CircleShape2D_nr2l6")
+shape = SubResource("SegmentShape2D_nr2l6")
 
 [node name="wheelColisionHorse6" type="Area2D" parent="." unique_id=1952473148 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
 id = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheelColisionHorse6" unique_id=651761206]
-shape = SubResource("CircleShape2D_nr2l6")
+shape = SubResource("SegmentShape2D_nr2l6")
 
 [connection signal="area_entered" from="wheelColisionHorse" to="wheelColisionHorse" method="_on_area_entered"]
 [connection signal="area_entered" from="wheelColisionHorse2" to="wheelColisionHorse2" method="_on_area_entered"]

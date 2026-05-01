@@ -6,9 +6,8 @@ extends Node2D
 @export var line_color: Color
 @export var line_width: int = 4
 @export var horseWeigh = Array([], TYPE_FLOAT, "", null) 
-@export var horsePercentageGain = Array([], TYPE_FLOAT, "", null) 
-@export var horsePercentage = Array([], TYPE_FLOAT, "", null) 
-@export var horseAngle = Array([], TYPE_FLOAT, "", null) 
+@onready var horsePercentage = Array([], TYPE_FLOAT, "", null) 
+@onready var horseAngle = Array([], TYPE_FLOAT, "", null) 
 @export var horseColor = Array([], TYPE_COLOR, "", null) 
 @export var horseCollisions :Array
 var x : float
@@ -22,12 +21,9 @@ var time:float = 0
 var choosingWinner:bool = true
 @export var pauseWinner = 1.0
 @export var pauseChoosingWinner = 2.0
-@export var horseGroup :Array
-var isGameWon = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	horseGroup= get_tree().get_nodes_in_group("HorseGroup")
 	var total =0
 	var lastAngle = 0.0
 	for i in range(len(horseWeigh)):
@@ -53,33 +49,28 @@ func AddValueHorseWeigh(horseNum:float,value:float) ->void:
 		queue_redraw()
 
 func _physics_process(delta: float) -> void:
-	if !isGameWon:
-		if time<timer && choosingWinner:
-			rotation_degrees-=rotationSpeed
-			countRound +=rotationSpeed
-			if countRound >= 360.0:
-				countRound =0
-				nbRound+=1
-			time+=delta
-		elif time<timer && !choosingWinner:
-			time+=delta
-			pass
-		else :
-			if choosingWinner:
-				#faire avancer le cheval
-				choosingWinner = false
-				timer =pauseWinner
-				time = 0
-				print(lastWinner)
-				horseGroup[lastWinner].horseAcceleration()
-				AddValueHorseWeigh(lastWinner,horsePercentageGain[lastWinner])
-				print("test")
-			else:
-				choosingWinner=true
-				pauseChoosingWinner=randf_range(1,3)
-				rotationSpeed=randf_range(1,5)
-				timer =pauseChoosingWinner
-				time = 0
+	if time<timer && choosingWinner:
+		rotation_degrees-=rotationSpeed
+		countRound +=rotationSpeed
+		if countRound >= 360.0:
+			countRound =0
+			nbRound+=1
+		time+=delta
+	elif time<timer && !choosingWinner:
+		time+=delta
+		pass
+	else :
+		if choosingWinner:
+			#faire avancer le cheval
+			choosingWinner = false
+			timer =pauseWinner
+			time = 0
+			print(lastWinner)
+		else:
+			choosingWinner=true
+			pauseChoosingWinner+=randf_range(-0.1,0.1)
+			timer =pauseChoosingWinner
+			time = 0
 			
 
 func _input(event: InputEvent) -> void:
@@ -131,12 +122,3 @@ func _draw() -> void:
 				points_inner+points_outer,
 				PackedColorArray([horseColor[i]])
 			)
-
-
-func _on_horse_horse_won(won: bool, horseWonID: int) -> void:
-	isGameWon=won
-	pass # Replace with function body.
-
-
-func _on_horse_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
