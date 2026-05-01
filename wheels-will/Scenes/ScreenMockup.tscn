@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://brgrqir7rdirv"]
+
+[ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/TestSprite_square.png" id="1_hr8vm"]
+
+[node name="ScreenMockup" type="Node2D" unique_id=172528043]
+
+[node name="TestSpriteSquare" type="Sprite2D" parent="." unique_id=819398693]
+modulate = Color(0.9490196, 0.8117647, 0.53333336, 1)
+position = Vector2(0, 360)
+scale = Vector2(19.2, 7.2)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare2" type="Sprite2D" parent="." unique_id=491536570]
+modulate = Color(0.59607846, 0.78039217, 0.40392157, 1)
+position = Vector2(350, 0)
+scale = Vector2(15.63, 3.5)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="Screenborder" type="Node2D" parent="." unique_id=1815364315]
+position = Vector2(0, 340)
+scale = Vector2(3.5, 0.1)
+
+[node name="TestSpriteSquare" type="Sprite2D" parent="Screenborder" unique_id=321749678]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(0, -3400)
+scale = Vector2(5.485715, 1)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare2" type="Sprite2D" parent="Screenborder" unique_id=1167403529]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(0, 7300)
+scale = Vector2(5.485715, 1)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare3" type="Sprite2D" parent="Screenborder" unique_id=1202388408]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(2.857143, -3400)
+rotation = 1.5707964
+scale = Vector2(108, 0.02857143)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare4" type="Sprite2D" parent="Screenborder" unique_id=633640209]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(548.5715, -3400)
+rotation = 1.5707964
+scale = Vector2(108, 0.02857143)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="Wheelborder" type="Node2D" parent="." unique_id=1848842712]
+position = Vector2(350, 0)
+rotation = 1.5707964
+scale = Vector2(3.5, 0.1)
+
+[node name="TestSpriteSquare7" type="Sprite2D" parent="Wheelborder" unique_id=402047647]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare8" type="Sprite2D" parent="Wheelborder" unique_id=1135122120]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(4.12136e-06, 3300)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare9" type="Sprite2D" parent="Wheelborder" unique_id=1029587987]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(2.8571472, 3500)
+rotation = -1.5707964
+scale = Vector2(35, 0.02857143)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare10" type="Sprite2D" parent="Wheelborder" unique_id=1870566489]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(97.14287, 3499.9998)
+rotation = -1.5707964
+scale = Vector2(35, 0.02857143)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare5" type="Sprite2D" parent="." unique_id=1077024936]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(0, 350)
+scale = Vector2(19.2, 0.1)
+texture = ExtResource("1_hr8vm")
+centered = false
+
+[node name="TestSpriteSquare6" type="Sprite2D" parent="." unique_id=1390278979]
+modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
+position = Vector2(360, 0)
+rotation = 1.5707964
+scale = Vector2(3.5, 0.1)
+texture = ExtResource("1_hr8vm")
+centered = false
