@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://buv0vcampbnsy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhkr4"]
+size = Vector2(5.3517685, 6.0588818)
+
+[node name="CursorWheel" type="Area2D" unique_id=1690243467]
+rotation = 0.7853982
+
+[node name="CursorWheelvisual" type="ColorRect" parent="." unique_id=453144388]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=60088972]
+position = Vector2(37.32412, 36.97056)
+shape = SubResource("RectangleShape2D_nhkr4")

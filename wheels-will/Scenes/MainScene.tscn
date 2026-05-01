@@ -1,17 +1,9 @@
 [gd_scene format=3 uid="uid://cnnfj1i8o8ojo"]
 
 [ext_resource type="PackedScene" uid="uid://c7iekha7c8pps" path="res://Scenes/wheel_of_fortune.tscn" id="1_hpc76"]
-[ext_resource type="Script" uid="uid://6dcqr4d61ery" path="res://Scenes/finish_line.gd" id="3_7rqgy"]
-[ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scenes/HorseController.gd" id="3_nhkr4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhkr4"]
-size = Vector2(5.3517685, 6.0588818)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tr2i4"]
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_tr2i4"]
-a = Vector2(8, 649)
-b = Vector2(0, 0)
+[ext_resource type="PackedScene" uid="uid://buv0vcampbnsy" path="res://Scenes/cursor_wheel.tscn" id="2_7rqgy"]
+[ext_resource type="PackedScene" uid="uid://djulawtsygag1" path="res://Scenes/horses_group.tscn" id="3_qxria"]
+[ext_resource type="PackedScene" uid="uid://sdaqrwlpvf3t" path="res://Scenes/finish_line.tscn" id="4_y4jh7"]
 
 [node name="Node2D" type="Node2D" unique_id=729257999]
 
@@ -19,120 +11,13 @@ b = Vector2(0, 0)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=822558824]
 
-[node name="CursorWheel" type="Area2D" parent="." unique_id=1924153975]
+[node name="CursorWheel" parent="." unique_id=1690243467 instance=ExtResource("2_7rqgy")]
 position = Vector2(0, -180)
-rotation = 0.7853982
 
-[node name="CursorWheelvisual" type="ColorRect" parent="CursorWheel" unique_id=476908142]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CursorWheel" unique_id=1661008115]
-position = Vector2(37.32412, 36.97056)
-shape = SubResource("RectangleShape2D_nhkr4")
-
-[node name="HorsesGroup" type="Node2D" parent="." unique_id=1067763449]
+[node name="HorsesGroup" parent="." unique_id=188138925 instance=ExtResource("3_qxria")]
 position = Vector2(-543, -301)
 
-[node name="Horse" type="Area2D" parent="HorsesGroup" unique_id=1745195809 groups=["HorseGroup"]]
-script = ExtResource("3_nhkr4")
-acceleration = 30
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HorsesGroup/Horse" unique_id=925545254]
-shape = SubResource("RectangleShape2D_tr2i4")
-
-[node name="ColorRect" type="ColorRect" parent="HorsesGroup/Horse" unique_id=1228471975]
-offset_left = -10.0
-offset_top = -11.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(0, 0.8352941, 0, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Horse2" type="Area2D" parent="HorsesGroup" unique_id=752598262 groups=["HorseGroup"]]
-position = Vector2(0, 24)
-script = ExtResource("3_nhkr4")
-acceleration = 40
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HorsesGroup/Horse2" unique_id=1619559529]
-shape = SubResource("RectangleShape2D_tr2i4")
-
-[node name="ColorRect" type="ColorRect" parent="HorsesGroup/Horse2" unique_id=1755371203]
-offset_left = -10.0
-offset_top = -11.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(1, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Horse3" type="Area2D" parent="HorsesGroup" unique_id=60999473 groups=["HorseGroup"]]
-position = Vector2(0, 48)
-script = ExtResource("3_nhkr4")
-acceleration = 40
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HorsesGroup/Horse3" unique_id=1493240238]
-shape = SubResource("RectangleShape2D_tr2i4")
-
-[node name="ColorRect" type="ColorRect" parent="HorsesGroup/Horse3" unique_id=1645159285]
-offset_left = -10.0
-offset_top = -11.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(0, 0, 1, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Horse4" type="Area2D" parent="HorsesGroup" unique_id=494167206 groups=["HorseGroup"]]
-position = Vector2(0, 72)
-script = ExtResource("3_nhkr4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HorsesGroup/Horse4" unique_id=1069203576]
-shape = SubResource("RectangleShape2D_tr2i4")
-
-[node name="ColorRect" type="ColorRect" parent="HorsesGroup/Horse4" unique_id=553458226]
-offset_left = -10.0
-offset_top = -11.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(1.7853664, 1.5171621, 0, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Horse5" type="Area2D" parent="HorsesGroup" unique_id=653349062 groups=["HorseGroup"]]
-position = Vector2(0, 96)
-script = ExtResource("3_nhkr4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HorsesGroup/Horse5" unique_id=1082932592]
-shape = SubResource("RectangleShape2D_tr2i4")
-
-[node name="ColorRect" type="ColorRect" parent="HorsesGroup/Horse5" unique_id=813481243]
-offset_left = -10.0
-offset_top = -11.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(0.93333334, 0.15686275, 0.64705884, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Horse6" type="Area2D" parent="HorsesGroup" unique_id=2000099722 groups=["HorseGroup"]]
-position = Vector2(0, 120)
-script = ExtResource("3_nhkr4")
-acceleration = 60
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HorsesGroup/Horse6" unique_id=156648233]
-shape = SubResource("RectangleShape2D_tr2i4")
-
-[node name="ColorRect" type="ColorRect" parent="HorsesGroup/Horse6" unique_id=872063339]
-offset_left = -10.0
-offset_top = -11.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(0, 0.5568628, 0.6627451, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="finishLine" type="Area2D" parent="." unique_id=2058980276]
+[node name="finishLine" parent="." unique_id=1909128054 instance=ExtResource("4_y4jh7")]
 position = Vector2(-405, -324)
-script = ExtResource("3_7rqgy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="finishLine" unique_id=195514708]
-shape = SubResource("SegmentShape2D_tr2i4")
-
-[connection signal="area_entered" from="finishLine" to="finishLine" method="_on_area_entered"]
 [connection signal="horseWon" from="finishLine" to="WheelOfFortune" method="_on_finish_line_horse_won"]

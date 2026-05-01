@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://sdaqrwlpvf3t"]
+
+[ext_resource type="Script" uid="uid://6dcqr4d61ery" path="res://Scenes/finish_line.gd" id="1_fpin6"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_tr2i4"]
+a = Vector2(8, 649)
+b = Vector2(0, 0)
+
+[node name="finishLine" type="Area2D" unique_id=1909128054]
+script = ExtResource("1_fpin6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737294294]
+shape = SubResource("SegmentShape2D_tr2i4")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

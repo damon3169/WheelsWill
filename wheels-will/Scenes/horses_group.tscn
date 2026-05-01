@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://djulawtsygag1"]
+
+[ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scenes/HorseController.gd" id="1_2ad4s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tr2i4"]
+
+[node name="HorsesGroup" type="Node2D" unique_id=188138925]
+
+[node name="Horse" type="Area2D" parent="." unique_id=1306746382 groups=["HorseGroup"]]
+script = ExtResource("1_2ad4s")
+acceleration = 30
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse" unique_id=1776959736]
+shape = SubResource("RectangleShape2D_tr2i4")
+
+[node name="ColorRect" type="ColorRect" parent="Horse" unique_id=38428012]
+offset_left = -10.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(0, 0.8352941, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Horse2" type="Area2D" parent="." unique_id=79920566 groups=["HorseGroup"]]
+position = Vector2(0, 24)
+script = ExtResource("1_2ad4s")
+acceleration = 40
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse2" unique_id=655006946]
+shape = SubResource("RectangleShape2D_tr2i4")
+
+[node name="ColorRect" type="ColorRect" parent="Horse2" unique_id=712395814]
+offset_left = -10.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Horse3" type="Area2D" parent="." unique_id=2104908972 groups=["HorseGroup"]]
+position = Vector2(0, 48)
+script = ExtResource("1_2ad4s")
+acceleration = 40
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse3" unique_id=1388986624]
+shape = SubResource("RectangleShape2D_tr2i4")
+
+[node name="ColorRect" type="ColorRect" parent="Horse3" unique_id=606755817]
+offset_left = -10.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(0, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Horse4" type="Area2D" parent="." unique_id=942584422 groups=["HorseGroup"]]
+position = Vector2(0, 72)
+script = ExtResource("1_2ad4s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse4" unique_id=132866918]
+shape = SubResource("RectangleShape2D_tr2i4")
+
+[node name="ColorRect" type="ColorRect" parent="Horse4" unique_id=1622483935]
+offset_left = -10.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1.7853664, 1.5171621, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Horse5" type="Area2D" parent="." unique_id=462836802 groups=["HorseGroup"]]
+position = Vector2(0, 96)
+script = ExtResource("1_2ad4s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse5" unique_id=883225276]
+shape = SubResource("RectangleShape2D_tr2i4")
+
+[node name="ColorRect" type="ColorRect" parent="Horse5" unique_id=306691887]
+offset_left = -10.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(0.93333334, 0.15686275, 0.64705884, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Horse6" type="Area2D" parent="." unique_id=758196361 groups=["HorseGroup"]]
+position = Vector2(0, 120)
+script = ExtResource("1_2ad4s")
+acceleration = 60
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Horse6" unique_id=1935121200]
+shape = SubResource("RectangleShape2D_tr2i4")
+
+[node name="ColorRect" type="ColorRect" parent="Horse6" unique_id=927500832]
+offset_left = -10.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(0, 0.5568628, 0.6627451, 1)
+metadata/_edit_use_anchors_ = true
