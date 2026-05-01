@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c7iekha7c8pps"]
+
+[ext_resource type="Script" uid="uid://c7ujkrr4qocvb" path="res://Scripts/wheel_of_fortuneCreate.gd" id="1_sgfco"]
+
+[node name="WheelOfFortune" type="Node2D" unique_id=957966518]
+script = ExtResource("1_sgfco")
+inner_radius = 1
+line_color = Color(1, 1, 1, 1)
+horseWeigh = Array[int]([0, 25, 25, 25, 25, 100, 200])
