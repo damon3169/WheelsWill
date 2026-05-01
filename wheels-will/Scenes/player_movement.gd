@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-@export var player_index = 0;
+@export var player_index = 0
+var bet_active : Node2D = null
 @export var movement_speed : float = 500
 var character_direction : Vector2
 
@@ -25,3 +26,8 @@ func _physics_process(delta: float):
 		if %sprite.animation != "Idle": %sprite.animation = "Idle"
 		
 	move_and_slide()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	print("hello")
+	pass # Replace with function body.
