@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://cnnfj1i8o8ojo"]
 
 [ext_resource type="PackedScene" uid="uid://c7iekha7c8pps" path="res://Scenes/wheel_of_fortune.tscn" id="1_hpc76"]
+[ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="2_tr2i4"]
 
 [node name="Node2D" type="Node2D" unique_id=729257999]
 
 [node name="WheelOfFortune" parent="." unique_id=957966518 instance=ExtResource("1_hpc76")]
 horseWeigh = Array[float]([0.0, 25.0, 25.0, 25.0, 25.0, 100.0, 200.0])
+
+[node name="Player" parent="." unique_id=1950543396 instance=ExtResource("2_tr2i4")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=822558824]
