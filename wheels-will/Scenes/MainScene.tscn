@@ -1,30 +1,15 @@
 [gd_scene format=3 uid="uid://cnnfj1i8o8ojo"]
 
 [ext_resource type="PackedScene" uid="uid://c7iekha7c8pps" path="res://Scenes/wheel_of_fortune.tscn" id="1_hpc76"]
+[ext_resource type="PackedScene" uid="uid://bxthkxt3a58lt" path="res://Scenes/color_rect.tscn" id="2_nhkr4"]
 [ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="2_tr2i4"]
-[ext_resource type="Script" uid="uid://csf4ttjmcks8t" path="res://Scenes/color_rect.gd" id="3_nhkr4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rqgy"]
-size = Vector2(40, 40)
 
 [node name="Node2D" type="Node2D" unique_id=729257999]
 
 [node name="WheelOfFortune" parent="." unique_id=957966518 instance=ExtResource("1_hpc76")]
 horseWeigh = Array[float]([0.0, 25.0, 25.0, 25.0, 25.0, 100.0, 200.0])
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1558799248]
-offset_left = 207.0
-offset_top = -154.0
-offset_right = 247.0
-offset_bottom = -114.0
-color = Color(0.8123662, 0.4100209, 0.63743347, 0.795)
-script = ExtResource("3_nhkr4")
-
-[node name="Area2D" type="Area2D" parent="ColorRect" unique_id=626269351]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Area2D" unique_id=1186330598]
-position = Vector2(20, 20)
-shape = SubResource("RectangleShape2D_7rqgy")
+[node name="ColorRect" parent="." unique_id=1356991685 instance=ExtResource("2_nhkr4")]
 
 [node name="Player" parent="." unique_id=1950543396 instance=ExtResource("2_tr2i4")]
 
@@ -32,7 +17,3 @@ shape = SubResource("RectangleShape2D_7rqgy")
 position = Vector2(147, 31)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=822558824]
-
-[connection signal="body_entered" from="ColorRect/Area2D" to="ColorRect" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="ColorRect/Area2D" to="Player" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="ColorRect/Area2D" to="ColorRect" method="_on_area_2d_body_exited"]

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://brgrqir7rdirv"]
 
 [ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="1_hr8vm"]
+[ext_resource type="PackedScene" uid="uid://bxthkxt3a58lt" path="res://Scenes/color_rect.tscn" id="2_pjhtq"]
+[ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="3_2jgnw"]
 
 [node name="ScreenMockup" type="Node2D" unique_id=172528043]
 
@@ -98,3 +100,16 @@ rotation = 1.5707964
 scale = Vector2(3.5, 0.1)
 texture = ExtResource("1_hr8vm")
 centered = false
+
+[node name="ColorRect" parent="." unique_id=1356991685 instance=ExtResource("2_pjhtq")]
+offset_left = 1296.0
+offset_top = 466.0
+offset_right = 1336.0
+offset_bottom = 506.0
+
+[node name="Player" parent="." unique_id=1950543396 instance=ExtResource("3_2jgnw")]
+position = Vector2(750, 623)
+
+[node name="Player2" parent="." unique_id=1281245096 instance=ExtResource("3_2jgnw")]
+position = Vector2(897, 654)
+player_index = 1

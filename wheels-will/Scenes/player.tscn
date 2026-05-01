@@ -33,9 +33,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h4iuc"]
-radius = 12.0
-height = 38.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_fkybt"]
+radius = 31.016125
+
+[sub_resource type="LabelSettings" id="LabelSettings_fkybt"]
+font_size = 24
 
 [node name="Player" type="CharacterBody2D" unique_id=1950543396]
 script = ExtResource("1_cvnsp")
@@ -43,24 +45,27 @@ script = ExtResource("1_cvnsp")
 [node name="sprite" type="AnimatedSprite2D" parent="." unique_id=1563426703]
 unique_name_in_owner = true
 position = Vector2(0, 15)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_7dp3o")
 animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663686894]
-position = Vector2(0, 15)
-shape = SubResource("CapsuleShape2D_h4iuc")
+position = Vector2(0, 31)
+shape = SubResource("CircleShape2D_fkybt")
 
-[node name="Ressources" type="Label" parent="." unique_id=1794091144]
-offset_left = -20.0
-offset_top = -41.0
-offset_right = 20.0
-offset_bottom = -18.0
-text = "0"
+[node name="Ressources" type="Label" parent="." unique_id=480117197]
+visible = false
+offset_left = -23.0
+offset_top = -95.0
+offset_right = 23.0
+offset_bottom = -40.0
+theme_override_font_sizes/font_size = 40
+text = "10"
 horizontal_alignment = 1
 
 [node name="UI_Player" type="Control" parent="." unique_id=2122018254]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = -20.0
@@ -68,31 +73,44 @@ offset_top = 38.0
 offset_right = 20.0
 offset_bottom = 78.0
 
+[node name="ColorRect" type="ColorRect" parent="UI_Player" unique_id=1366003830]
+layout_mode = 0
+offset_left = -110.0
+offset_top = 32.0
+offset_right = 149.0
+offset_bottom = 134.0
+color = Color(0.45597935, 0.21298105, 0.34946266, 0.81960785)
+
 [node name="ChangeBet" type="Label" parent="UI_Player" unique_id=2011726246]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 6.5999985
+offset_top = 46.6
+offset_right = 138.6
+offset_bottom = 80.6
+theme_override_font_sizes/font_size = 26
 text = "Change bet"
+label_settings = SubResource("LabelSettings_fkybt")
 
 [node name="Bet" type="Label" parent="UI_Player" unique_id=2009414780]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 27.0
-offset_right = 89.0
-offset_bottom = 50.0
-text = "BET"
+offset_left = 4.5999985
+offset_top = 86.6
+offset_right = 92.6
+offset_bottom = 122.6
+theme_override_font_sizes/font_size = 26
+text = "Bet!"
 
 [node name="XboxButtonColorA" type="Sprite2D" parent="UI_Player" unique_id=171300002]
-position = Vector2(-17, 40)
-scale = Vector2(0.4, 0.4)
+position = Vector2(-28.400002, 108.6)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_fkybt")
 
 [node name="XboxLb" type="Sprite2D" parent="UI_Player" unique_id=171662332]
-position = Vector2(-48, 12)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-72.4, 62.6)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("4_x3wgy")
 
 [node name="XboxRb" type="Sprite2D" parent="UI_Player" unique_id=503751242]
-position = Vector2(-17, 12)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-22.400002, 62.6)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("5_3smsa")

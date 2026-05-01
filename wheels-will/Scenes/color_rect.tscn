@@ -1,22 +1,24 @@
 [gd_scene format=3 uid="uid://bxthkxt3a58lt"]
 
-[ext_resource type="Script" uid="uid://csf4ttjmcks8t" path="res://Scenes/color_rect.gd" id="1_6kqla"]
+[ext_resource type="Script" uid="uid://csf4ttjmcks8t" path="res://Scripts/color_rect.gd" id="1_6kqla"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rqgy"]
-size = Vector2(40, 40)
+size = Vector2(14.222221, 14.222223)
 
-[node name="ColorRect" type="ColorRect" unique_id=26719183]
-offset_left = 207.0
-offset_top = -154.0
-offset_right = 247.0
-offset_bottom = -114.0
+[node name="ColorRect" type="ColorRect" unique_id=1356991685]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = -21.333332
+offset_bottom = -21.333332
+scale = Vector2(3, 3)
 color = Color(0.8123662, 0.4100209, 0.63743347, 0.795)
 script = ExtResource("1_6kqla")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1977970392]
+[node name="Area2D" type="Area2D" parent="." unique_id=542069387]
+scale = Vector2(3, 3)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=13854563]
-position = Vector2(20, 20)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=213262420]
+position = Vector2(7.111111, 7.111111)
 shape = SubResource("RectangleShape2D_7rqgy")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
