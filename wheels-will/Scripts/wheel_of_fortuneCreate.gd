@@ -133,10 +133,9 @@ func _draw() -> void:
 			)
 
 
-func _on_horse_horse_won(won: bool, horseWonID: int) -> void:
-	isGameWon=won
-	pass # Replace with function body.
 
-
-func _on_horse_area_entered(area: Area2D) -> void:
+func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
+	isGameWon = horseHasWon
+	for i in range(len(horseGroup)):
+		horseGroup[i].gameIsWon = true
 	pass # Replace with function body.

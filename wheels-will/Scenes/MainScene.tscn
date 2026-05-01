@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cnnfj1i8o8ojo"]
 
 [ext_resource type="PackedScene" uid="uid://c7iekha7c8pps" path="res://Scenes/wheel_of_fortune.tscn" id="1_hpc76"]
+[ext_resource type="Script" uid="uid://6dcqr4d61ery" path="res://Scenes/finish_line.gd" id="3_7rqgy"]
 [ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scenes/HorseController.gd" id="3_nhkr4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nhkr4"]
@@ -128,11 +129,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="finishLine" type="Area2D" parent="." unique_id=2058980276]
 position = Vector2(-405, -324)
+script = ExtResource("3_7rqgy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="finishLine" unique_id=195514708]
 shape = SubResource("SegmentShape2D_tr2i4")
 
-[connection signal="area_entered" from="HorsesGroup/Horse" to="HorsesGroup/Horse" method="_on_area_entered"]
-[connection signal="horseWon" from="HorsesGroup/Horse" to="WheelOfFortune" method="_on_horse_horse_won"]
-[connection signal="area_entered" from="HorsesGroup/Horse5" to="WheelOfFortune" method="_on_horse_area_entered"]
-[connection signal="area_entered" from="HorsesGroup/Horse6" to="WheelOfFortune" method="_on_horse_area_entered"]
+[connection signal="area_entered" from="finishLine" to="finishLine" method="_on_area_entered"]
+[connection signal="horseWon" from="finishLine" to="WheelOfFortune" method="_on_finish_line_horse_won"]

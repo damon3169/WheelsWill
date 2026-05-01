@@ -1,8 +1,5 @@
 extends Area2D
-@export var id =0
-@export var speed =16
-@export var acceleration = 50
-var gameIsWon = false
+signal horseWon(horseHasWon: bool, horseID:int)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,11 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if !gameIsWon:
-		position.x+=speed*delta
-
-func horseAcceleration() ->void:
-	speed+=acceleration
-	await get_tree().create_timer(1).timeout
-	speed-=acceleration
 	pass
+
+
+func _on_area_entered(area: Area2D) -> void:
+	horseWon.emit(true,area.id)
+	pass # Replace with function body.
