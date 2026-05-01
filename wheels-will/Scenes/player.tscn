@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://ckga3f8ony2ss" path="res://Scenes/player_movement.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://6f4tqtdj76qx" path="res://Sprites/yellowNinja - walk.png" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="3_fkybt"]
+[ext_resource type="Texture2D" uid="uid://cswomnmkdjh5k" path="res://Sprites/UI/xbox_lb.png" id="4_x3wgy"]
+[ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="5_3smsa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
 atlas = ExtResource("1_v0iea")
@@ -126,3 +129,48 @@ frame_progress = 0.24258442
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663686894]
 position = Vector2(0, 15)
 shape = SubResource("CapsuleShape2D_h4iuc")
+
+[node name="Ressources" type="Label" parent="." unique_id=1595108510]
+offset_left = -20.0
+offset_top = -38.0
+offset_right = 20.0
+offset_bottom = -15.0
+text = "50"
+horizontal_alignment = 1
+
+[node name="UI_Player" type="Control" parent="." unique_id=1431802416]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Increase bet" type="Label" parent="UI_Player" unique_id=1754286302]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 42.0
+offset_right = 100.0
+offset_bottom = 65.0
+text = "Change bet"
+
+[node name="Decrease bet2" type="Label" parent="UI_Player" unique_id=1305826436]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 73.0
+offset_right = 107.0
+offset_bottom = 96.0
+text = "BET"
+
+[node name="A" type="Sprite2D" parent="UI_Player" unique_id=1524209236]
+position = Vector2(-17, 85)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("3_fkybt")
+
+[node name="LB" type="Sprite2D" parent="UI_Player" unique_id=1452157872]
+position = Vector2(-46, 55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_x3wgy")
+
+[node name="RB" type="Sprite2D" parent="UI_Player" unique_id=380511909]
+position = Vector2(-17, 55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_3smsa")
