@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ulyllv180val"
-path="res://.godot/imported/TestSprite_square.png-345d92e27d9af8f041dd01c021c75699.ctex"
+uid="uid://c27ny7fk7d0kf"
+path="res://.godot/imported/xbox_rb.png-683b1cb6bdaa990fb934ebb381d3e312.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/TestSprite_square.png"
-dest_files=["res://.godot/imported/TestSprite_square.png-345d92e27d9af8f041dd01c021c75699.ctex"]
+source_file="res://Sprites/UI/xbox_rb.png"
+dest_files=["res://.godot/imported/xbox_rb.png-683b1cb6bdaa990fb934ebb381d3e312.ctex"]
 
 [params]
 

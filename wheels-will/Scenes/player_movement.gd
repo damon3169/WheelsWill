@@ -1,9 +1,11 @@
 extends CharacterBody2D
 
 @export var player_index = 0
-var bet_active : Node2D = null
+var bet_active : ColorRect = null
 @export var movement_speed : float = 500
 var character_direction : Vector2
+var list_bet = [3, 4, 5, 7]
+var _n = 0;
 
 func _physics_process(delta: float):
 	character_direction.x = Input.get_joy_axis(player_index, JOY_AXIS_LEFT_X)
@@ -27,7 +29,18 @@ func _physics_process(delta: float):
 		
 	move_and_slide()
 
+		
+func _input(_event: InputEvent) -> void:
+	if bet_active != null :
+		#if Input.is_joy_button_pressed(player_index, JOY_BUTTON_A) :
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	print("hello")
-	pass # Replace with function body.
+		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_RIGHT_SHOULDER) && _n < list_bet.size()-1 :
+			_n = _n+1
+		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_LEFT_SHOULDER) && _n > 0 :
+			_n = _n-1
+		$Ressources.text = str(list_bet[_n])
+		$Ressources.show()
+		$UI_Player.show()
+	else :
+		$Ressources.hide()	
+		$UI_Player.hide()
