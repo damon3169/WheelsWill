@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brgrqir7rdirv"]
 
-[ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/TestSprite_square.png" id="1_hr8vm"]
+[ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="1_hr8vm"]
 
 [node name="ScreenMockup" type="Node2D" unique_id=172528043]
 
