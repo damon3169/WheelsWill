@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ulyllv180val"
-path="res://.godot/imported/TestSprite_square.png-345d92e27d9af8f041dd01c021c75699.ctex"
+uid="uid://bsaf03wsiqxbw"
+path="res://.godot/imported/spritesheet_youngLeprechaun.png-8cd747964a1c7df4f2b47b1de6fb3c8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/TestSprite_square.png"
-dest_files=["res://.godot/imported/TestSprite_square.png-345d92e27d9af8f041dd01c021c75699.ctex"]
+source_file="res://Sprites/spritesheet_youngLeprechaun.png"
+dest_files=["res://.godot/imported/spritesheet_youngLeprechaun.png-8cd747964a1c7df4f2b47b1de6fb3c8c.ctex"]
 
 [params]
 
