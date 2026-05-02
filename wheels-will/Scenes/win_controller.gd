@@ -23,7 +23,6 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 		HorseGroupSortedFinish.append(horseGroupSorted[i][0])
 	betGroup = get_tree().get_nodes_in_group("BetGroup")
 	for i in range(len(betGroup)):
-		print("Array :",HorseGroupSortedFinish)
 		betGroup[i].validate_bet(HorseGroupSortedFinish)
 	pass
 

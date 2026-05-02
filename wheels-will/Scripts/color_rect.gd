@@ -30,21 +30,22 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 	body.bet_active = null
 	
 func bet_actions(_var : int) -> void:
-
 	activebet = false
 
 func validate_bet(_ranklist : Array) -> void:
-	if(BetType == "Top1") :
-		if(HorseID == _ranklist[0]) :
-			winningbet = true
-	if(BetType == "Top2") :
-		if(HorseID == _ranklist[0] || HorseID == _ranklist[1]) :
-			winningbet = true
-	if(BetType == "Top3") :
-		if(HorseID == _ranklist[0] || HorseID == _ranklist[1] || HorseID == _ranklist[2]) :
-			winningbet = true
-	if(winningbet) :
-		moneygain = bettingValue*BetMultipler
-	else :
-		moneygain = MalusPoint
-	print("Winnings:",moneygain)
+	if !activebet :
+		if(BetType == "Top1") :
+			if(HorseID == _ranklist[0]) :
+				winningbet = true
+		if(BetType == "Top2") :
+			if(HorseID == _ranklist[0] || HorseID == _ranklist[1]) :
+				winningbet = true
+		if(BetType == "Top3") :
+			if(HorseID == _ranklist[0] || HorseID == _ranklist[1] || HorseID == _ranklist[2]) :
+				winningbet = true
+		if(winningbet) :
+			moneygain = bettingValue*BetMultipler
+		else :
+			moneygain = MalusPoint
+		_lastbody.score += moneygain
+		print("Winnings ",_lastbody.player_index," :",_lastbody.score)

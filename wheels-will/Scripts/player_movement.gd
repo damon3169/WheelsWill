@@ -4,6 +4,7 @@ extends CharacterBody2D
 var bet_active : ColorRect = null
 @export var movement_speed : float = 500
 var character_direction : Vector2
+var score = 0
 var list_bet = [3, 4, 5, 7]
 var _n = 0;
 var coincreation = preload("res://Scenes/coin_creation.tscn")
