@@ -5,13 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://c78arcre1mj1a" path="res://Scenes/bet_list.tscn" id="3_6ktmq"]
 [ext_resource type="PackedScene" uid="uid://d2dta1hbb0a2h" path="res://Scenes/add_ambroise.tscn" id="3_hpn0r"]
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
-[ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
-[ext_resource type="Texture2D" uid="uid://h0k23jgj8itn" path="res://Sprites/Enviro/BetBoard.png" id="8_hbdip"]
 [ext_resource type="PackedScene" uid="uid://bofmqg1dgfto1" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
 [ext_resource type="Texture2D" uid="uid://7fggc80np2vr" path="res://Sprites/Enviro/WheelCadrant.png" id="9_lpiux"]
 [ext_resource type="Texture2D" uid="uid://rax3jcedk2md" path="res://Sprites/Enviro/Pointeur.png" id="10_hbdip"]
 [ext_resource type="Texture2D" uid="uid://d0te85ktgndim" path="res://Sprites/Enviro/ShamrockWheel.png" id="11_28n07"]
 [ext_resource type="PackedScene" uid="uid://cgvgn6pfpmv0s" path="res://Scenes/lastbest_line.tscn" id="11_lpiux"]
+[ext_resource type="PackedScene" uid="uid://evcju8w76836" path="res://Scenes/ui_shorcuts.tscn" id="13_28n07"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -59,8 +58,6 @@ visible = false
 position = Vector2(5, 716)
 shape = SubResource("RectangleShape2D_2jgnw")
 
-[node name="UI" parent="." unique_id=1956281826 instance=ExtResource("7_t0ume")]
-
 [node name="Player0" parent="." unique_id=1950543396 instance=ExtResource("3_2jgnw")]
 z_index = 20
 position = Vector2(194, 504)
@@ -83,10 +80,6 @@ player_index = 3
 [node name="Next Round Button" parent="." unique_id=189446824 instance=ExtResource("9_cksun")]
 position = Vector2(47, 875)
 
-[node name="BetBoard" type="Sprite2D" parent="." unique_id=214408605]
-position = Vector2(1600, 755)
-texture = ExtResource("8_hbdip")
-
 [node name="WheelCadrant" type="Sprite2D" parent="." unique_id=1173226844]
 position = Vector2(185, 186)
 texture = ExtResource("9_lpiux")
@@ -105,3 +98,9 @@ texture = ExtResource("5_c1mlt")
 
 [node name="LastbestLine" parent="." unique_id=1894226418 instance=ExtResource("11_lpiux")]
 position = Vector2(1451, 184)
+
+[node name="UI_Shorcuts" parent="." unique_id=894886354 instance=ExtResource("13_28n07")]
+offset_left = 922.0
+offset_top = 1078.0
+offset_right = 962.0
+offset_bottom = 1118.0
