@@ -23,6 +23,8 @@ window/size/viewport_height=970
 [global_group]
 
 BetGroup=""
+Players=""
+nextRoomButton=""
 
 [gui]
 

@@ -2,9 +2,12 @@ extends Node2D
 @export var horseGroup :Array
 @export var horseGroupSorted:Array
 var betGroup: Array
+var nextRoomButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	nextRoomButton = get_tree().get_nodes_in_group("nextRoomButton")
+	nextRoomButton[0].nextRound.connect(emit_nextRound)
 	pass # Replace with function body.
 
 
@@ -24,6 +27,7 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	betGroup = get_tree().get_nodes_in_group("BetGroup")
 	for i in range(len(betGroup)):
 		betGroup[i].validate_bet(HorseGroupSortedFinish)
+	nextRoomButton[0].visible = true
 	pass
 
 
@@ -31,3 +35,6 @@ func sort_ascending(a, b):
 	if a[1] < b[1]:
 		return true
 	return false
+
+func emit_nextRound() ->void:
+	pass
