@@ -33,11 +33,13 @@ BetMultipler = 2
 position = Vector2(1008, 802)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 3
+BetType = "Top2"
 
 [node name="GreenTop3" parent="Bet_Snail0" unique_id=1819020043 instance=ExtResource("1_a0dac")]
 position = Vector2(1010, 932)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 2
+BetType = "Top3"
 
 [node name="Bet_Snail1" type="Node2D" parent="." unique_id=252744701]
 position = Vector2(0, -17)
@@ -46,21 +48,27 @@ position = Vector2(0, -17)
 position = Vector2(1149, 535)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 1
 
 [node name="GreenTop11" parent="Bet_Snail1" unique_id=1116809558 instance=ExtResource("1_a0dac")]
 position = Vector2(1148, 655)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
+HorseID = 1
 
 [node name="GreenTop2" parent="Bet_Snail1" unique_id=438325879 instance=ExtResource("1_a0dac")]
 position = Vector2(1155, 815)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
+HorseID = 1
+BetType = "Top2"
 
 [node name="GreenTop3" parent="Bet_Snail1" unique_id=1764054352 instance=ExtResource("1_a0dac")]
 position = Vector2(1160, 953)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 3
+HorseID = 1
+BetType = "Top3"
 
 [node name="Bet_Snail2" type="Node2D" parent="." unique_id=1434924802]
 position = Vector2(0, -17)
@@ -69,21 +77,27 @@ position = Vector2(0, -17)
 position = Vector2(1295, 538)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 2
 
 [node name="GreenTop11" parent="Bet_Snail2" unique_id=1784615388 instance=ExtResource("1_a0dac")]
 position = Vector2(1295.0001, 659)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
+HorseID = 2
 
 [node name="GreenTop2" parent="Bet_Snail2" unique_id=620141476 instance=ExtResource("1_a0dac")]
 position = Vector2(1298, 810)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
+HorseID = 2
+BetType = "Top2"
 
 [node name="GreenTop3" parent="Bet_Snail2" unique_id=851182218 instance=ExtResource("1_a0dac")]
 position = Vector2(1301, 946)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 3
+HorseID = 2
+BetType = "Top3"
 
 [node name="Bet_Snail3" type="Node2D" parent="." unique_id=850078193]
 position = Vector2(0, -17)
@@ -92,21 +106,27 @@ position = Vector2(0, -17)
 position = Vector2(1437, 541.0001)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 6
+HorseID = 3
 
 [node name="GreenTop11" parent="Bet_Snail3" unique_id=958526348 instance=ExtResource("1_a0dac")]
 position = Vector2(1436, 655.00006)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 3
 
 [node name="GreenTop2" parent="Bet_Snail3" unique_id=1490437042 instance=ExtResource("1_a0dac")]
 position = Vector2(1441.0001, 816)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 3
+BetType = "Top2"
 
 [node name="GreenTop3" parent="Bet_Snail3" unique_id=727276780 instance=ExtResource("1_a0dac")]
 position = Vector2(1447.0001, 951)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
+HorseID = 3
+BetType = "Top3"
 
 [node name="Bet_Snail4" type="Node2D" parent="." unique_id=251033964]
 position = Vector2(0, -17)
@@ -115,21 +135,27 @@ position = Vector2(0, -17)
 position = Vector2(1580, 537)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 6
+HorseID = 4
 
 [node name="GreenTop11" parent="Bet_Snail4" unique_id=1482836532 instance=ExtResource("1_a0dac")]
 position = Vector2(1582, 660)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 4
 
 [node name="GreenTop2" parent="Bet_Snail4" unique_id=192326899 instance=ExtResource("1_a0dac")]
 position = Vector2(1580, 809)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 4
+BetType = "Top2"
 
 [node name="GreenTop3" parent="Bet_Snail4" unique_id=691240312 instance=ExtResource("1_a0dac")]
 position = Vector2(1582, 954)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
+HorseID = 4
+BetType = "Top3"
 
 [node name="Bet_Snail5" type="Node2D" parent="." unique_id=1153025808]
 position = Vector2(0, -17)
@@ -138,18 +164,24 @@ position = Vector2(0, -17)
 position = Vector2(1718, 539)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 7
+HorseID = 5
 
 [node name="GreenTop11" parent="Bet_Snail5" unique_id=2068749994 instance=ExtResource("1_a0dac")]
 position = Vector2(1721, 668.0001)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 6
+HorseID = 5
 
 [node name="GreenTop2" parent="Bet_Snail5" unique_id=395596721 instance=ExtResource("1_a0dac")]
 position = Vector2(1716.0001, 808.99994)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 6
+HorseID = 5
+BetType = "Top2"
 
 [node name="GreenTop3" parent="Bet_Snail5" unique_id=328894011 instance=ExtResource("1_a0dac")]
 position = Vector2(1722, 948)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 5
+HorseID = 5
+BetType = "Top3"
