@@ -8,7 +8,7 @@ func _ready() -> void:
 	labels =  get_tree().get_nodes_in_group("labelResult")
 	print(result.arrayScrorePlayer)
 	for i in range(len(result.arrayScrorePlayer)):
-			labels[i].text= str(result.arrayScrorePlayer[i][0])+ " "+ str(result.arrayScrorePlayer[i][1])
+			labels[i].text= "Player "+tr(result.arrayScrorePlayer[i][0])+ "has "+ str(result.arrayScrorePlayer[i][1])+"points."
 	pass # Replace with function body.
 
 
