@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 [ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
 [ext_resource type="Texture2D" uid="uid://csodkuaas1ig8" path="res://Sprites/Enviro/LastbestLine.png" id="8_t0ume"]
+[ext_resource type="PackedScene" uid="uid://bofmqg1dgfto1" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -127,21 +128,6 @@ centered = false
 
 [node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]
 
-[node name="Player0" parent="." unique_id=1950543396 instance=ExtResource("3_2jgnw")]
-position = Vector2(750, 623)
-
-[node name="Player1" parent="." unique_id=1281245096 instance=ExtResource("3_2jgnw")]
-position = Vector2(897, 654)
-player_index = 1
-
-[node name="Player2" parent="." unique_id=957586981 instance=ExtResource("3_2jgnw")]
-position = Vector2(539, 660)
-player_index = 2
-
-[node name="Player3" parent="." unique_id=266932466 instance=ExtResource("3_2jgnw")]
-position = Vector2(354, 657)
-player_index = 3
-
 [node name="Wall" type="StaticBody2D" parent="." unique_id=1550762814]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=457426962]
@@ -177,3 +163,24 @@ texture = ExtResource("5_c1mlt")
 [node name="LastbestLine" type="Sprite2D" parent="." unique_id=114430498]
 position = Vector2(1677, 189)
 texture = ExtResource("8_t0ume")
+
+[node name="Player0" parent="." unique_id=1950543396 instance=ExtResource("3_2jgnw")]
+z_index = 20
+position = Vector2(750, 623)
+
+[node name="Player1" parent="." unique_id=1281245096 instance=ExtResource("3_2jgnw")]
+z_index = 20
+position = Vector2(897, 654)
+player_index = 1
+
+[node name="Player2" parent="." unique_id=957586981 instance=ExtResource("3_2jgnw")]
+z_index = 20
+position = Vector2(539, 660)
+player_index = 2
+
+[node name="Player3" parent="." unique_id=266932466 instance=ExtResource("3_2jgnw")]
+z_index = 20
+position = Vector2(354, 657)
+player_index = 3
+
+[node name="Next Round Button" parent="." unique_id=189446824 instance=ExtResource("9_cksun")]
