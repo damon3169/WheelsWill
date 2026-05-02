@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm7dc83nkvhln"
-path="res://.godot/imported/Spritesheetsnail01.png-d9575901d82fbeef64fad8c17e0f55c3.ctex"
+path="res://.godot/imported/Spritesheetsnail01.png-8926f200db396635f0c8d4bbb2fa433b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Enviro/Spritesheetsnail01.png"
-dest_files=["res://.godot/imported/Spritesheetsnail01.png-d9575901d82fbeef64fad8c17e0f55c3.ctex"]
+source_file="res://Sprites/Chara/Spritesheetsnail01.png"
+dest_files=["res://.godot/imported/Spritesheetsnail01.png-8926f200db396635f0c8d4bbb2fa433b.ctex"]
 
 [params]
 

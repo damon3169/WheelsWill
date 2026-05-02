@@ -13,7 +13,7 @@ height = 66.0
 [sub_resource type="LabelSettings" id="LabelSettings_fkybt"]
 font_size = 24
 
-[node name="Player" type="CharacterBody2D" unique_id=1950543396]
+[node name="Player" type="CharacterBody2D" unique_id=1950543396 groups=["Players"]]
 z_index = 1
 motion_mode = 1
 script = ExtResource("1_cvnsp")
