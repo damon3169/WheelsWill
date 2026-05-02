@@ -2,10 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://c46o7d2h4g2ax" path="res://Sprites/Enviro/Background_01.png" id="1_2jgnw"]
 [ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="1_hr8vm"]
-[ext_resource type="PackedScene" uid="uid://bxthkxt3a58lt" path="res://Scenes/color_rect.tscn" id="2_pjhtq"]
 [ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="3_2jgnw"]
+[ext_resource type="PackedScene" uid="uid://c78arcre1mj1a" path="res://Scenes/bet_list.tscn" id="3_6ktmq"]
 [ext_resource type="PackedScene" uid="uid://d2dta1hbb0a2h" path="res://Scenes/add_ambroise.tscn" id="3_hpn0r"]
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
+[ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -105,6 +106,8 @@ scale = Vector2(35, 0.02857143)
 texture = ExtResource("1_hr8vm")
 centered = false
 
+[node name="BetList" parent="." unique_id=1060818587 instance=ExtResource("3_6ktmq")]
+
 [node name="TestSpriteSquare5" type="Sprite2D" parent="." unique_id=1077024936]
 visible = false
 modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
@@ -123,97 +126,19 @@ texture = ExtResource("1_hr8vm")
 centered = false
 
 [node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]
-position = Vector2(824.1783, 838.82947)
-
-[node name="ColorRect" parent="." unique_id=1356991685 instance=ExtResource("2_pjhtq")]
-offset_left = 1444.0
-offset_top = 398.0
-offset_right = 1487.0
-offset_bottom = 441.33337
-
-[node name="ColorRect" parent="ColorRect" unique_id=58770143 instance=ExtResource("2_pjhtq")]
-layout_mode = 0
-offset_left = 1353.0
-offset_top = 558.0
-offset_right = 1396.0
-offset_bottom = 601.3334
-
-[node name="ColorRect6" parent="." unique_id=233167164 instance=ExtResource("2_pjhtq")]
-offset_left = 1437.0
-offset_top = 811.00006
-offset_right = 1480.0
-offset_bottom = 854.33344
-
-[node name="ColorRect" parent="ColorRect6" unique_id=991559000 instance=ExtResource("2_pjhtq")]
-layout_mode = 0
-offset_left = 1353.0
-offset_top = 558.0
-offset_right = 1396.0
-offset_bottom = 601.3334
-
-[node name="ColorRect2" parent="." unique_id=1173485492 instance=ExtResource("2_pjhtq")]
-offset_left = 1107.0
-offset_top = 809.0
-offset_right = 1150.0
-offset_bottom = 852.3334
-
-[node name="ColorRect" parent="ColorRect2" unique_id=1541005865 instance=ExtResource("2_pjhtq")]
-layout_mode = 0
-offset_left = 1353.0
-offset_top = 558.0
-offset_right = 1396.0
-offset_bottom = 601.3334
-
-[node name="ColorRect3" parent="." unique_id=1371894406 instance=ExtResource("2_pjhtq")]
-offset_left = 1430.0
-offset_top = 612.0
-offset_right = 1473.0
-offset_bottom = 655.3334
-
-[node name="ColorRect" parent="ColorRect3" unique_id=1220648763 instance=ExtResource("2_pjhtq")]
-layout_mode = 0
-offset_left = 1353.0
-offset_top = 558.0
-offset_right = 1396.0
-offset_bottom = 601.3334
-
-[node name="ColorRect4" parent="." unique_id=819634811 instance=ExtResource("2_pjhtq")]
-offset_left = 1104.0
-offset_top = 611.0
-offset_right = 1147.0
-offset_bottom = 654.3334
-
-[node name="ColorRect" parent="ColorRect4" unique_id=1925815025 instance=ExtResource("2_pjhtq")]
-layout_mode = 0
-offset_left = 1353.0
-offset_top = 558.0
-offset_right = 1396.0
-offset_bottom = 601.3334
-
-[node name="ColorRect5" parent="." unique_id=1077525321 instance=ExtResource("2_pjhtq")]
-offset_left = 1112.0
-offset_top = 395.0
-offset_right = 1155.0
-offset_bottom = 438.33337
-
-[node name="ColorRect" parent="ColorRect5" unique_id=1533235107 instance=ExtResource("2_pjhtq")]
-layout_mode = 0
-offset_left = 1353.0
-offset_top = 558.0
-offset_right = 1396.0
-offset_bottom = 601.3334
 
 [node name="Player" parent="." unique_id=1950543396 instance=ExtResource("3_2jgnw")]
 position = Vector2(750, 623)
-
-[node name="Player3" parent="." unique_id=957586981 instance=ExtResource("3_2jgnw")]
-modulate = Color(0.49530578, 0.4686913, 0.20634955, 1)
-position = Vector2(539, 660)
 
 [node name="Player2" parent="." unique_id=1281245096 instance=ExtResource("3_2jgnw")]
 modulate = Color(2.5027991e-06, 0.7159091, 0.8972338, 1)
 position = Vector2(897, 654)
 player_index = 1
+
+[node name="Player3" parent="." unique_id=957586981 instance=ExtResource("3_2jgnw")]
+modulate = Color(0.49530578, 0.4686913, 0.20634955, 1)
+position = Vector2(539, 660)
+player_index = 2
 
 [node name="Wall" type="StaticBody2D" parent="." unique_id=1550762814]
 
@@ -245,4 +170,4 @@ shape = SubResource("RectangleShape2D_2jgnw")
 position = Vector2(964, 528)
 texture = ExtResource("5_c1mlt")
 
-[node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]
+[node name="UI" parent="." unique_id=1956281826 instance=ExtResource("7_t0ume")]
