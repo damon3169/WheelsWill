@@ -12,6 +12,10 @@ var chara_0 = preload("res://Sprites/Chara/Chara_J0.tres")
 var chara_1 = preload("res://Sprites/Chara/Chara_J1.tres")
 var chara_2 = preload("res://Sprites/Chara/Chara_J2.tres")
 var chara_3 = preload("res://Sprites/Chara/Chara_J3.tres")
+var coin_0 = preload("res://Sprites/Enviro/CoinJ0.png")
+var coin_1 = preload("res://Sprites/Enviro/CoinJ1.png")
+var coin_2 = preload("res://Sprites/Enviro/CoinJ2.png")
+var coin_3 = preload("res://Sprites/Enviro/CoinJ3.png")
 var resetround
 
 func _ready() -> void:
@@ -20,12 +24,16 @@ func _ready() -> void:
 	match player_index :
 		0:
 			$sprite.sprite_frames = chara_0
+			$CoinSprite.texture = coin_0
 		1:
 			$sprite.sprite_frames = chara_1
+			$CoinSprite.texture = coin_1
 		2:
 			$sprite.sprite_frames = chara_2
+			$CoinSprite.texture = coin_2
 		3:
 			$sprite.sprite_frames = chara_3
+			$CoinSprite.texture = coin_3
 	pass # Replace with function body.
 
 func _physics_process(delta: float):
@@ -68,7 +76,7 @@ func _input(_event: InputEvent) -> void:
 				if(_n > 0) :
 					_n = _n-1
 				$Ressources.hide()	
-				$UI_Player.hide()
+				$CoinSprite.hide()
 
 		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_RIGHT_SHOULDER) && _n < list_bet.size()-1 :
 			_n = _n+1
@@ -78,10 +86,10 @@ func _input(_event: InputEvent) -> void:
 			$Ressources.text = str(list_bet[_n])
 			if bet_activeArray[0].activebet :
 				$Ressources.show()
-				$UI_Player.show()
+				$CoinSprite.show()
 	else :
 		$Ressources.hide()	
-		$UI_Player.hide()
+		$CoinSprite.hide()
 		
 func emit_nextRound() ->void:
 	list_bet = [3, 4, 5, 6]

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ckga3f8ony2ss" path="res://Scripts/player_movement.gd" id="1_cvnsp"]
 [ext_resource type="SpriteFrames" uid="uid://ic7ohq4pc8xo" path="res://Sprites/Chara/Chara_J0.tres" id="2_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="3_fkybt"]
+[ext_resource type="Texture2D" uid="uid://bq6so28rqc4ek" path="res://Sprites/Enviro/CoinJ0.png" id="3_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://cswomnmkdjh5k" path="res://Sprites/UI/xbox_lb.png" id="4_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="5_3smsa"]
 
@@ -23,19 +24,24 @@ unique_name_in_owner = true
 position = Vector2(0, 15)
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("2_fkybt")
-animation = &"Walking"
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663686894]
 position = Vector2(0, 29)
 shape = SubResource("CapsuleShape2D_fkybt")
 
+[node name="CoinSprite" type="Sprite2D" parent="." unique_id=768822889]
+modulate = Color(0.79, 0.79, 0.79, 1)
+position = Vector2(37, 29)
+scale = Vector2(0.16708334, 0.16708334)
+texture = ExtResource("3_x3wgy")
+
 [node name="Ressources" type="Label" parent="." unique_id=480117197]
-visible = false
-offset_left = -23.0
-offset_top = -95.0
-offset_right = 23.0
-offset_bottom = -40.0
-theme_override_font_sizes/font_size = 40
+offset_left = 13.0
+offset_top = 10.0
+offset_right = 59.0
+offset_bottom = 65.83333
+theme_override_font_sizes/font_size = 24
 text = "10"
 horizontal_alignment = 1
 
