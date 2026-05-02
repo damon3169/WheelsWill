@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://d4gxydlkd4gi2"]
+
+[ext_resource type="Texture2D" uid="uid://dqd2hl56uc5x7" path="res://Sprites/Chara/spritesheet_J3.png" id="1_27mao"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msd0o"]
+atlas = ExtResource("1_27mao")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s58wy"]
+atlas = ExtResource("1_27mao")
+region = Rect2(1000, 0, 500, 500)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msd0o")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s58wy")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 5.0
+}]

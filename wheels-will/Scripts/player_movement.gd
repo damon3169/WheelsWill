@@ -8,6 +8,22 @@ var score = 0
 var list_bet = [3, 4, 5, 7]
 var _n = 0;
 var coincreation = preload("res://Scenes/coin_creation.tscn")
+var chara_0 = preload("res://Sprites/Chara/Chara_J0.tres")
+var chara_1 = preload("res://Sprites/Chara/Chara_J1.tres")
+var chara_2 = preload("res://Sprites/Chara/Chara_J2.tres")
+var chara_3 = preload("res://Sprites/Chara/Chara_J3.tres")
+
+func _ready() -> void:
+	match player_index :
+		0:
+			$sprite.sprite_frames = chara_0
+		1:
+			$sprite.sprite_frames = chara_1
+		2:
+			$sprite.sprite_frames = chara_2
+		3:
+			$sprite.sprite_frames = chara_3
+	pass # Replace with function body.
 
 func _physics_process(delta: float):
 	character_direction.x = Input.get_joy_axis(player_index, JOY_AXIS_LEFT_X)
