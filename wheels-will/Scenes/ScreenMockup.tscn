@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://h0k23jgj8itn" path="res://Sprites/Enviro/BetBoard.png" id="10_28n07"]
 [ext_resource type="Texture2D" uid="uid://rax3jcedk2md" path="res://Sprites/Enviro/Pointeur.png" id="10_hbdip"]
 [ext_resource type="Texture2D" uid="uid://d0te85ktgndim" path="res://Sprites/Enviro/ShamrockWheel.png" id="11_28n07"]
-[ext_resource type="PackedScene" path="res://Scenes/lastbest_line.tscn" id="11_lpiux"]
+[ext_resource type="PackedScene" uid="uid://cgvgn6pfpmv0s" path="res://Scenes/lastbest_line.tscn" id="11_lpiux"]
 [ext_resource type="PackedScene" uid="uid://evcju8w76836" path="res://Scenes/ui_shorcuts.tscn" id="13_28n07"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
