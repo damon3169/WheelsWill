@@ -7,7 +7,6 @@ var players
 var playerIn:Array
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	players = get_tree().get_nodes_in_group("Players")
 	pass # Replace with function body.
 
 
@@ -26,6 +25,7 @@ func onAllPlayerReset() -> void:
 	else:
 		var instance = result.instantiate()
 		var resultPlayers: Array
+		players = get_tree().get_nodes_in_group("Players")
 		get_parent().get_parent().get_parent().add_child(instance)
 		for i in range(len(players)):
 			resultPlayers.append([players[i].player_index,players[i].score])
@@ -45,6 +45,7 @@ func sort_ascending(a, b):
 
 
 func _on_body_entered(body: Node2D) -> void:
+	players = get_tree().get_nodes_in_group("Players")
 	playerIn.append(body)
 	canRelaunch = true
 	for i in range(len(players)):
