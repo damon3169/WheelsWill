@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://camy5vkpq0o1r"]
+
+[ext_resource type="Script" uid="uid://cyuccwxolijjf" path="res://Scenes/result_screen.gd" id="1_4blp4"]
+
+[node name="ResultScreen" type="Node2D" unique_id=1497372647]
+script = ExtResource("1_4blp4")
+
+[node name="Control" type="Control" parent="." unique_id=679480192]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1706.0
+offset_bottom = 968.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=942465531]
+layout_mode = 0
+offset_right = 1705.0
+offset_bottom = 961.0
+
+[node name="Label" type="Label" parent="Control/VBoxContainer" unique_id=973303579 groups=["labelResult"]]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Control/VBoxContainer" unique_id=1160289232 groups=["labelResult"]]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="Control/VBoxContainer" unique_id=682256089 groups=["labelResult"]]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="Control/VBoxContainer" unique_id=1458081804 groups=["labelResult"]]
+layout_mode = 2

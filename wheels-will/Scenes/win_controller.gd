@@ -24,12 +24,14 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	var HorseGroupSortedFinish : Array
 	for  i in range(len(horseGroupSorted)):
 		HorseGroupSortedFinish.append(horseGroupSorted[i][0])
+	for  i in range(len(HorseGroupSortedFinish)):
+			for j in range(len(horseGroup)):
+				if HorseGroupSortedFinish[i] == horseGroup[j].id:
+					horseGroup[j].get_child(2).text =str("top "+str(i))
 	betGroup = get_tree().get_nodes_in_group("BetGroup")
 	for i in range(len(betGroup)):
 		betGroup[i].validate_bet(HorseGroupSortedFinish)
-	
 	nextRoomButton[0].visible = true
-	print(nextRoomButton[0].visible)
 	pass
 
 
