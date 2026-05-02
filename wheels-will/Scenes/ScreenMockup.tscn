@@ -152,8 +152,6 @@ shape = SubResource("RectangleShape2D_2jgnw")
 position = Vector2(5, 716)
 shape = SubResource("RectangleShape2D_2jgnw")
 
-[node name="Coin" type="Sprite2D" parent="." unique_id=363807541]
-
 [node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
 position = Vector2(964, 528)
 texture = ExtResource("5_c1mlt")
