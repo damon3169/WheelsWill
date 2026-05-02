@@ -13,21 +13,28 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if visible:
+			get_child(0).disabled = false
 	pass
 
 func onAllPlayerReset() -> void:
 	if NumberOfRound<3:
 		NumberOfRound +=1
 		nextRound.emit()
+		get_child(0).disabled = true
 		hide()
 	else:
 		var instance = result.instantiate()
 		var resultPlayers: Array
 		get_parent().get_parent().get_parent().add_child(instance)
-		get_tree().change_scene_to_file("res://Scenes/Menu.tscn")
 		for i in range(len(players)):
 			resultPlayers.append([players[i].player_index,players[i].score])
 		resultPlayers.sort_custom(func(a, b): return a[1] > b[1])
+		print(get_parent().get_parent().get_parent().get_child(1))
+		for i in range(len(resultPlayers)):
+			get_parent().get_parent().get_parent().get_child(1).arrayScrorePlayer.append(resultPlayers[i])
+		
+		get_tree().change_scene_to_file("res://Scenes/resultScreen.tscn")
 		
 
 func sort_ascending(a, b):
@@ -45,7 +52,7 @@ func _on_body_entered(body: Node2D) -> void:
 			canRelaunch = false
 			break
 	if canRelaunch:
-		onAllPlayerReset() 
+		call_deferred("onAllPlayerReset")
 	pass # Replace with function body.
 
 

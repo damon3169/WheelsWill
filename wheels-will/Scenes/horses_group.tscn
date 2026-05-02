@@ -2,13 +2,133 @@
 
 [ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scripts/HorseController.gd" id="1_2ad4s"]
 [ext_resource type="SpriteFrames" uid="uid://bpp3k7pm6nfby" path="res://Sprites/Chara/Snail01.tres" id="2_avh8v"]
-[ext_resource type="SpriteFrames" uid="uid://ch8roafaggan1" path="res://Sprites/Chara/Snail02.tres" id="3_ylrjl"]
-[ext_resource type="SpriteFrames" uid="uid://ch8roafaggan1" path="res://Sprites/Chara/Snail03.tres" id="4_ylrjl"]
+[ext_resource type="Texture2D" uid="uid://d34cpx8fdqbxq" path="res://Sprites/Chara/Spritesheetsnail02.png" id="3_ylrjl"]
+[ext_resource type="Texture2D" uid="uid://duh3pwjxtrljg" path="res://Sprites/Chara/Spritesheetsnail03.png" id="4_ylrjl"]
 [ext_resource type="SpriteFrames" uid="uid://bbwlcty5hinot" path="res://Sprites/Chara/Snail04.tres" id="5_23kqq"]
 [ext_resource type="SpriteFrames" uid="uid://bmmxssjgwc0d6" path="res://Sprites/Chara/Snail05.tres" id="6_kkqlc"]
 [ext_resource type="SpriteFrames" uid="uid://phi12635dwa7" path="res://Sprites/Chara/Snail06.tres" id="7_nymir"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tr2i4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bs83y"]
+atlas = ExtResource("3_ylrjl")
+region = Rect2(2000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrpxb"]
+atlas = ExtResource("3_ylrjl")
+region = Rect2(2500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ww2f"]
+atlas = ExtResource("3_ylrjl")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31lh7"]
+atlas = ExtResource("3_ylrjl")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wfn8"]
+atlas = ExtResource("3_ylrjl")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtsa3"]
+atlas = ExtResource("3_ylrjl")
+region = Rect2(1500, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_23kqq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bs83y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rrpxb")
+}],
+"loop": true,
+"name": &"Boost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ww2f")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31lh7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wfn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtsa3")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwtkv"]
+atlas = ExtResource("4_ylrjl")
+region = Rect2(2000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iptwk"]
+atlas = ExtResource("4_ylrjl")
+region = Rect2(2500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23kqq"]
+atlas = ExtResource("4_ylrjl")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkqlc"]
+atlas = ExtResource("4_ylrjl")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nymir"]
+atlas = ExtResource("4_ylrjl")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fhr3"]
+atlas = ExtResource("4_ylrjl")
+region = Rect2(1500, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1qajk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwtkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iptwk")
+}],
+"loop": true,
+"name": &"Boost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23kqq")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkqlc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nymir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fhr3")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
 
 [node name="HorsesGroup" type="Node2D" unique_id=188138925]
 
@@ -28,6 +148,12 @@ sprite_frames = ExtResource("2_avh8v")
 animation = &"Run"
 frame_progress = 0.12704645
 
+[node name="Label" type="Label" parent="Horse" unique_id=345996694]
+offset_left = -118.0
+offset_top = 4.0
+offset_right = -78.0
+offset_bottom = 27.0
+
 [node name="Horse2" type="Area2D" parent="." unique_id=79920566 groups=["HorseGroup"]]
 position = Vector2(0, 36)
 script = ExtResource("1_2ad4s")
@@ -41,8 +167,14 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse2" unique_id=527401572]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("3_ylrjl")
+sprite_frames = SubResource("SpriteFrames_23kqq")
 animation = &"Run"
+
+[node name="Label" type="Label" parent="Horse2" unique_id=412479349]
+offset_left = -118.0
+offset_top = 4.0
+offset_right = -78.0
+offset_bottom = 27.0
 
 [node name="Horse3" type="Area2D" parent="." unique_id=2104908972 groups=["HorseGroup"]]
 position = Vector2(0, 91)
@@ -57,8 +189,14 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse3" unique_id=548588033]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("4_ylrjl")
+sprite_frames = SubResource("SpriteFrames_1qajk")
 animation = &"Run"
+
+[node name="Label" type="Label" parent="Horse3" unique_id=285864143]
+offset_left = -118.0
+offset_top = 4.0
+offset_right = -78.0
+offset_bottom = 27.0
 
 [node name="Horse4" type="Area2D" parent="." unique_id=942584422 groups=["HorseGroup"]]
 position = Vector2(0, 151)
@@ -75,6 +213,12 @@ scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("5_23kqq")
 animation = &"Idle"
 
+[node name="Label" type="Label" parent="Horse4" unique_id=85390996]
+offset_left = -118.0
+offset_top = 4.0
+offset_right = -78.0
+offset_bottom = 27.0
+
 [node name="Horse5" type="Area2D" parent="." unique_id=462836802 groups=["HorseGroup"]]
 position = Vector2(0, 211)
 script = ExtResource("1_2ad4s")
@@ -89,6 +233,12 @@ position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("6_kkqlc")
 animation = &"Idle"
+
+[node name="Label" type="Label" parent="Horse5" unique_id=537155771]
+offset_left = -118.0
+offset_top = 4.0
+offset_right = -78.0
+offset_bottom = 27.0
 
 [node name="Horse6" type="Area2D" parent="." unique_id=758196361 groups=["HorseGroup"]]
 position = Vector2(0, 254)
@@ -105,3 +255,9 @@ position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("7_nymir")
 animation = &"Boost"
+
+[node name="Label" type="Label" parent="Horse6" unique_id=1818140477]
+offset_left = -118.0
+offset_top = 4.0
+offset_right = -78.0
+offset_bottom = 27.0

@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://evcju8w76836"]
+
+[ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="1_icbgq"]
+[ext_resource type="Texture2D" uid="uid://cswomnmkdjh5k" path="res://Sprites/UI/xbox_lb.png" id="2_502fn"]
+[ext_resource type="Texture2D" uid="uid://cmn75fwb0is4w" path="res://Sprites/UI/xbox_stick_l.png" id="3_502fn"]
+[ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="3_ibouh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fkybt"]
+font_size = 20
+
+[node name="UI_Shorcuts" type="Control" unique_id=894886354]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -20.0
+offset_top = -17.0
+offset_right = 20.0
+offset_bottom = 23.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=697204990]
+visible = false
+layout_mode = 0
+offset_left = -167.0
+offset_top = -78.0
+offset_right = 259.0
+offset_bottom = -35.0
+color = Color(0, 0, 0, 0.63529414)
+
+[node name="ChangeBet" type="Label" parent="." unique_id=1875068349]
+layout_mode = 0
+offset_left = 13.287994
+offset_top = -1.7000046
+offset_right = 145.288
+offset_bottom = 32.299995
+theme_override_font_sizes/font_size = 26
+text = "Change bet"
+label_settings = SubResource("LabelSettings_fkybt")
+
+[node name="ChangeBet2" type="Label" parent="." unique_id=1512237955]
+layout_mode = 0
+offset_left = -229.712
+offset_top = -1.7000046
+offset_right = -97.712006
+offset_bottom = 32.299995
+theme_override_font_sizes/font_size = 26
+text = "Move"
+label_settings = SubResource("LabelSettings_fkybt")
+
+[node name="Bet" type="Label" parent="." unique_id=1246191986]
+layout_mode = 0
+offset_left = 214.288
+offset_top = -1.7000046
+offset_right = 311.288
+offset_bottom = 34.299995
+theme_override_font_sizes/font_size = 20
+text = "Place bet"
+
+[node name="XboxButtonColorA" type="Sprite2D" parent="." unique_id=1625947822]
+position = Vector2(196.288, 11.299995)
+scale = Vector2(0.45937493, 0.45937493)
+texture = ExtResource("1_icbgq")
+
+[node name="XboxLb" type="Sprite2D" parent="." unique_id=1349038307]
+position = Vector2(-42.712006, 10.299995)
+scale = Vector2(0.634, 0.634)
+texture = ExtResource("2_502fn")
+
+[node name="XboxLb2" type="Sprite2D" parent="." unique_id=332846561]
+position = Vector2(-247, 12)
+scale = Vector2(0.5000002, 0.5000002)
+texture = ExtResource("3_502fn")
+
+[node name="XboxRb" type="Sprite2D" parent="." unique_id=1361784568]
+position = Vector2(-8.712006, 10.299995)
+scale = Vector2(0.6343749, 0.6343749)
+texture = ExtResource("3_ibouh")
