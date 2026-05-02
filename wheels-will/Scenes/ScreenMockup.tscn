@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="1_hr8vm"]
 [ext_resource type="PackedScene" uid="uid://bxthkxt3a58lt" path="res://Scenes/color_rect.tscn" id="2_pjhtq"]
 [ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="3_2jgnw"]
+[ext_resource type="PackedScene" uid="uid://d2dta1hbb0a2h" path="res://Scenes/add_ambroise.tscn" id="3_hpn0r"]
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
@@ -120,6 +121,9 @@ rotation = 1.5707964
 scale = Vector2(3.5, 0.1)
 texture = ExtResource("1_hr8vm")
 centered = false
+
+[node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]
+position = Vector2(824.1783, 838.82947)
 
 [node name="ColorRect" parent="." unique_id=1356991685 instance=ExtResource("2_pjhtq")]
 offset_left = 1444.0
