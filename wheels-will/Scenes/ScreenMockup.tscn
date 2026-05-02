@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d2dta1hbb0a2h" path="res://Scenes/add_ambroise.tscn" id="3_hpn0r"]
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 [ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
+[ext_resource type="Texture2D" uid="uid://csodkuaas1ig8" path="res://Sprites/Enviro/LastbestLine.png" id="8_t0ume"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -171,3 +172,7 @@ position = Vector2(964, 528)
 texture = ExtResource("5_c1mlt")
 
 [node name="UI" parent="." unique_id=1956281826 instance=ExtResource("7_t0ume")]
+
+[node name="LastbestLine" type="Sprite2D" parent="." unique_id=114430498]
+position = Vector2(1677, 189)
+texture = ExtResource("8_t0ume")

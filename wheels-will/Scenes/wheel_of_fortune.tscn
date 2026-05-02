@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7iekha7c8pps"]
 
 [ext_resource type="Script" uid="uid://c7ujkrr4qocvb" path="res://Scripts/wheel_of_fortuneCreate.gd" id="1_sgfco"]
-[ext_resource type="Script" uid="uid://b07s0qb0yhxel" path="res://Scenes/wheel_colision_horse.gd" id="2_nr2l6"]
+[ext_resource type="Script" uid="uid://b07s0qb0yhxel" path="res://Scripts/wheel_colision_horse.gd" id="2_nr2l6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nr2l6"]
 radius = 2.0
@@ -11,7 +11,7 @@ script = ExtResource("1_sgfco")
 inner_radius = 1
 horseWeigh = Array[float]([400.0, 300.0, 300.0, 200.0, 200.0, 100.0])
 horsePercentageGain = Array[float]([10.0, 20.0, 20.0, 40.0, 40.0, 80.0])
-horseColor = Array[Color]([Color(0, 0.8352941, 0, 1), Color(1, 0, 0, 1), Color(0, 0, 1, 1), Color(0.9118431, 0.7743093, 1.540184e-06, 1), Color(0.93171465, 0.15841353, 0.64683217, 1), Color(0, 0.5585161, 0.6640863, 1)])
+horseColor = Array[Color]([Color(0.7019608, 0.4392157, 0.3019608, 1), Color(0.28627452, 0.73333335, 0.9372549, 1), Color(0.21960784, 0.52156866, 0.34901962, 1), Color(0.9843137, 0.9607843, 0.3529412, 1), Color(0.49411765, 0.59607846, 0.7411765, 1), Color(0.92941177, 0.54509807, 0.7137255, 1)])
 
 [node name="wheelColisionHorse" type="Area2D" parent="." unique_id=650631930 groups=["WheelColision"]]
 script = ExtResource("2_nr2l6")
