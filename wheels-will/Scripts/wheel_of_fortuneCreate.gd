@@ -11,8 +11,7 @@ extends Node2D
 @export var horseAngle = Array([], TYPE_FLOAT, "", null) 
 @export var horseColor = Array([], TYPE_COLOR, "", null) 
 @export var horseCollisions :Array
-var x : float
-var time:float = 0
+
 @export var rotationSpeed:float=5
 @export var lastWinner:int =0
 @export var timer =2.0
@@ -24,6 +23,8 @@ var choosingWinner:bool = true
 @export var pauseChoosingWinner = 2.0
 @export var horseGroup :Array
 var isGameWon = false
+var x : float
+var time:float = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -138,4 +139,5 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	isGameWon = horseHasWon
 	for i in range(len(horseGroup)):
 		horseGroup[i].gameIsWon = true
+		pass
 	pass # Replace with function body.

@@ -7,6 +7,7 @@
 [node name="HorsesGroup" type="Node2D" unique_id=188138925]
 
 [node name="Horse" type="Area2D" parent="." unique_id=1306746382 groups=["HorseGroup"]]
+position = Vector2(0, 13)
 script = ExtResource("1_2ad4s")
 acceleration = 30
 
@@ -22,7 +23,7 @@ color = Color(0, 0.8352941, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse2" type="Area2D" parent="." unique_id=79920566 groups=["HorseGroup"]]
-position = Vector2(0, 24)
+position = Vector2(0, 70)
 script = ExtResource("1_2ad4s")
 acceleration = 40
 
@@ -38,7 +39,7 @@ color = Color(1, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse3" type="Area2D" parent="." unique_id=2104908972 groups=["HorseGroup"]]
-position = Vector2(0, 48)
+position = Vector2(0, 125)
 script = ExtResource("1_2ad4s")
 acceleration = 40
 
@@ -54,7 +55,7 @@ color = Color(0, 0, 1, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse4" type="Area2D" parent="." unique_id=942584422 groups=["HorseGroup"]]
-position = Vector2(0, 72)
+position = Vector2(0, 185)
 script = ExtResource("1_2ad4s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse4" unique_id=132866918]
@@ -69,7 +70,7 @@ color = Color(1.7853664, 1.5171621, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse5" type="Area2D" parent="." unique_id=462836802 groups=["HorseGroup"]]
-position = Vector2(0, 96)
+position = Vector2(0, 245)
 script = ExtResource("1_2ad4s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse5" unique_id=883225276]
@@ -84,7 +85,7 @@ color = Color(0.93333334, 0.15686275, 0.64705884, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse6" type="Area2D" parent="." unique_id=758196361 groups=["HorseGroup"]]
-position = Vector2(0, 120)
+position = Vector2(0, 288)
 script = ExtResource("1_2ad4s")
 acceleration = 60
 
