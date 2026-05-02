@@ -244,3 +244,5 @@ shape = SubResource("RectangleShape2D_2jgnw")
 [node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
 position = Vector2(964, 528)
 texture = ExtResource("5_c1mlt")
+
+[node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]

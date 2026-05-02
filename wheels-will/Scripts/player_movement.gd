@@ -6,6 +6,7 @@ var bet_active : ColorRect = null
 var character_direction : Vector2
 var list_bet = [3, 4, 5, 7]
 var _n = 0;
+var coincreation = preload("res://Scenes/coin_creation.tscn")
 
 func _physics_process(delta: float):
 	character_direction.x = Input.get_joy_axis(player_index, JOY_AXIS_LEFT_X)
@@ -34,7 +35,14 @@ func _input(_event: InputEvent) -> void:
 	if bet_active != null :
 		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_A) && !list_bet.is_empty() :
 			if bet_active.activebet :
-				bet_active.bet_actions(list_bet.pop_at(_n))
+				var instance = coincreation.instantiate()
+				var _s = list_bet.pop_at(_n)
+				bet_active.bettingValue = _s
+				instance.position = Vector2(0,0)
+				instance.get_child(1).text = str(_s)
+				bet_active.add_child(instance)
+				
+				bet_active.bet_actions(_s)
 				if(_n > 0) :
 					_n = _n-1
 				$Ressources.hide()	

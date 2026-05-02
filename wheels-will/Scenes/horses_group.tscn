@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://djulawtsygag1"]
 
-[ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scenes/HorseController.gd" id="1_2ad4s"]
+[ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scripts/HorseController.gd" id="1_2ad4s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tr2i4"]
 
@@ -25,6 +25,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Horse2" type="Area2D" parent="." unique_id=79920566 groups=["HorseGroup"]]
 position = Vector2(0, 70)
 script = ExtResource("1_2ad4s")
+id = 1
 acceleration = 40
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse2" unique_id=655006946]
@@ -41,6 +42,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Horse3" type="Area2D" parent="." unique_id=2104908972 groups=["HorseGroup"]]
 position = Vector2(0, 125)
 script = ExtResource("1_2ad4s")
+id = 2
 acceleration = 40
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse3" unique_id=1388986624]
@@ -57,6 +59,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Horse4" type="Area2D" parent="." unique_id=942584422 groups=["HorseGroup"]]
 position = Vector2(0, 185)
 script = ExtResource("1_2ad4s")
+id = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse4" unique_id=132866918]
 shape = SubResource("RectangleShape2D_tr2i4")
@@ -72,6 +75,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Horse5" type="Area2D" parent="." unique_id=462836802 groups=["HorseGroup"]]
 position = Vector2(0, 245)
 script = ExtResource("1_2ad4s")
+id = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse5" unique_id=883225276]
 shape = SubResource("RectangleShape2D_tr2i4")
@@ -87,6 +91,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Horse6" type="Area2D" parent="." unique_id=758196361 groups=["HorseGroup"]]
 position = Vector2(0, 288)
 script = ExtResource("1_2ad4s")
+id = 5
 acceleration = 60
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse6" unique_id=1935121200]

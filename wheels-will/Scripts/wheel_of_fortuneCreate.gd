@@ -71,10 +71,8 @@ func _physics_process(delta: float) -> void:
 				choosingWinner = false
 				timer =pauseWinner
 				time = 0
-				print(lastWinner)
 				horseGroup[lastWinner].horseAcceleration()
 				AddValueHorseWeigh(lastWinner,horsePercentageGain[lastWinner])
-				print("test")
 			else:
 				choosingWinner=true
 				pauseChoosingWinner=randf_range(1,3)
@@ -83,10 +81,6 @@ func _physics_process(delta: float) -> void:
 				time = 0
 			
 
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("addTest"):
-		AddValueHorseWeigh(4,-25)
-		print("t")
 func _draw() -> void:
 	draw_circle(Vector2.ZERO,outer_raduis, bkg_color)
 	draw_arc(Vector2.ZERO,inner_radius,0,TAU,128, line_color, line_width,true)
