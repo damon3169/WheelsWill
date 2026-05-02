@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c5cdgjbjbanm2"]
 
 [ext_resource type="Script" uid="uid://ckga3f8ony2ss" path="res://Scripts/player_movement.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://bqir38g7ip1vi" path="res://Sprites/Chara/spritesheet_J1.png" id="2_fkybt"]
+[ext_resource type="Texture2D" uid="uid://bqir38g7ip1vi" path="res://Sprites/Chara/spritesheet_J0.png" id="2_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cswomnmkdjh5k" path="res://Sprites/UI/xbox_lb.png" id="4_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="5_3smsa"]
