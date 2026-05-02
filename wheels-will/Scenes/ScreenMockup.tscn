@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brgrqir7rdirv"]
 
-[ext_resource type="Texture2D" uid="uid://c46o7d2h4g2ax" path="res://Sprites/Enviro/Background_01.png" id="1_2jgnw"]
+[ext_resource type="Texture2D" uid="uid://bv6ycc58j2alv" path="res://Sprites/Enviro/Background_01.png" id="1_2jgnw"]
 [ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="1_hr8vm"]
 [ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="3_2jgnw"]
 [ext_resource type="PackedScene" uid="uid://c78arcre1mj1a" path="res://Scenes/bet_list.tscn" id="3_6ktmq"]
@@ -8,7 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 [ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
 [ext_resource type="Texture2D" uid="uid://csodkuaas1ig8" path="res://Sprites/Enviro/LastbestLine.png" id="8_t0ume"]
-[ext_resource type="PackedScene" uid="uid://bofmqg1dgfto1" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
+[ext_resource type="PackedScene" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
+[ext_resource type="Texture2D" uid="uid://7fggc80np2vr" path="res://Sprites/Enviro/WheelCadrant.png" id="9_hbdip"]
+[ext_resource type="Texture2D" uid="uid://rax3jcedk2md" path="res://Sprites/Enviro/Pointeur.png" id="10_28n07"]
+[ext_resource type="Texture2D" uid="uid://d0te85ktgndim" path="res://Sprites/Enviro/ShamrockWheel.png" id="11_mi3yw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -24,88 +27,9 @@ position = Vector2(-25, -25)
 texture = ExtResource("1_2jgnw")
 centered = false
 
-[node name="TestSpriteSquare" type="Sprite2D" parent="." unique_id=819398693]
-visible = false
-modulate = Color(0.9490196, 0.8117647, 0.53333336, 1)
-position = Vector2(0, 360)
-scale = Vector2(19.2, 7.2)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare2" type="Sprite2D" parent="." unique_id=491536570]
-modulate = Color(0.59607846, 0.78039217, 0.40392157, 1)
-position = Vector2(350, 0)
-scale = Vector2(15.63, 3.5)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="Screenborder" type="Node2D" parent="." unique_id=1815364315]
-visible = false
-position = Vector2(0, 340)
-scale = Vector2(3.5, 0.1)
-
-[node name="TestSpriteSquare" type="Sprite2D" parent="Screenborder" unique_id=321749678]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(0, -3400)
-scale = Vector2(5.485715, 1)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare2" type="Sprite2D" parent="Screenborder" unique_id=1167403529]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(0, 7300)
-scale = Vector2(5.485715, 1)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare3" type="Sprite2D" parent="Screenborder" unique_id=1202388408]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(2.857143, -3400)
-rotation = 1.5707964
-scale = Vector2(108, 0.02857143)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare4" type="Sprite2D" parent="Screenborder" unique_id=633640209]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(548.5715, -3400)
-rotation = 1.5707964
-scale = Vector2(108, 0.02857143)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="Wheelborder" type="Node2D" parent="." unique_id=1848842712]
-visible = false
-position = Vector2(350, 0)
-rotation = 1.5707964
-scale = Vector2(3.5, 0.1)
-
-[node name="TestSpriteSquare7" type="Sprite2D" parent="Wheelborder" unique_id=402047647]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare8" type="Sprite2D" parent="Wheelborder" unique_id=1135122120]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(4.12136e-06, 3300)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare9" type="Sprite2D" parent="Wheelborder" unique_id=1029587987]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(2.8571472, 3500)
-rotation = -1.5707964
-scale = Vector2(35, 0.02857143)
-texture = ExtResource("1_hr8vm")
-centered = false
-
-[node name="TestSpriteSquare10" type="Sprite2D" parent="Wheelborder" unique_id=1870566489]
-modulate = Color(0.68235296, 0.6313726, 0.43529412, 1)
-position = Vector2(97.14287, 3499.9998)
-rotation = -1.5707964
-scale = Vector2(35, 0.02857143)
-texture = ExtResource("1_hr8vm")
-centered = false
+[node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
+position = Vector2(964, 528)
+texture = ExtResource("5_c1mlt")
 
 [node name="BetList" parent="." unique_id=1060818587 instance=ExtResource("3_6ktmq")]
 
@@ -129,34 +53,34 @@ centered = false
 [node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]
 
 [node name="Wall" type="StaticBody2D" parent="." unique_id=1550762814]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=457426962]
 position = Vector2(958, 366)
 shape = SubResource("RectangleShape2D_pjhtq")
 
 [node name="Wall2" type="StaticBody2D" parent="." unique_id=1970629635]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=31166530]
 position = Vector2(956, 1080.5)
 shape = SubResource("RectangleShape2D_pjhtq")
 
 [node name="Wall3" type="StaticBody2D" parent="." unique_id=2131286304]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall3" unique_id=663961279]
 position = Vector2(1915, 715.5)
 shape = SubResource("RectangleShape2D_2jgnw")
 
 [node name="Wall4" type="StaticBody2D" parent="." unique_id=1270547688]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall4" unique_id=814376791]
 position = Vector2(5, 716)
 shape = SubResource("RectangleShape2D_2jgnw")
 
 [node name="Coin" type="Sprite2D" parent="." unique_id=363807541]
-
-[node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
-position = Vector2(964, 528)
-texture = ExtResource("5_c1mlt")
 
 [node name="UI" parent="." unique_id=1956281826 instance=ExtResource("7_t0ume")]
 
@@ -188,3 +112,15 @@ offset_left = -123.0
 offset_top = 6.0
 offset_right = 1868.0
 offset_bottom = 1141.0
+
+[node name="WheelCadrant" type="Sprite2D" parent="." unique_id=2125217291]
+position = Vector2(185, 187)
+texture = ExtResource("9_hbdip")
+
+[node name="Pointeur" type="Sprite2D" parent="." unique_id=2091866937]
+position = Vector2(186, 31)
+texture = ExtResource("10_28n07")
+
+[node name="ShamrockWheel" type="Sprite2D" parent="." unique_id=1417316615]
+position = Vector2(187, 187)
+texture = ExtResource("11_mi3yw")

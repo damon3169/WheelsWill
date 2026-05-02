@@ -1,0 +1,63 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bmmxssjgwc0d6"]
+
+[ext_resource type="Texture2D" uid="uid://bdbpppcosx4ui" path="res://Sprites/Chara/Spritesheetsnail05.png" id="1_ef1bp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hckfo"]
+atlas = ExtResource("1_ef1bp")
+region = Rect2(2000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlouh"]
+atlas = ExtResource("1_ef1bp")
+region = Rect2(2500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyjw0"]
+atlas = ExtResource("1_ef1bp")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2x4ua"]
+atlas = ExtResource("1_ef1bp")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tb8w4"]
+atlas = ExtResource("1_ef1bp")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpiei"]
+atlas = ExtResource("1_ef1bp")
+region = Rect2(1500, 0, 500, 500)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hckfo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlouh")
+}],
+"loop": true,
+"name": &"Boost",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyjw0")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2x4ua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tb8w4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vpiei")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]

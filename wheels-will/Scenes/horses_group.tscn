@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://4djochsh8ey4" path="res://Scripts/HorseController.gd" id="1_2ad4s"]
 [ext_resource type="SpriteFrames" uid="uid://bpp3k7pm6nfby" path="res://Sprites/Chara/Snail01.tres" id="2_avh8v"]
+[ext_resource type="SpriteFrames" uid="uid://ch8roafaggan1" path="res://Sprites/Chara/Snail02.tres" id="3_hfoba"]
+[ext_resource type="SpriteFrames" uid="uid://ch8roafaggan1" path="res://Sprites/Chara/Snail03.tres" id="4_ylrjl"]
+[ext_resource type="SpriteFrames" uid="uid://bbwlcty5hinot" path="res://Sprites/Chara/Snail04.tres" id="5_23kqq"]
+[ext_resource type="SpriteFrames" uid="uid://bmmxssjgwc0d6" path="res://Sprites/Chara/Snail05.tres" id="6_kkqlc"]
+[ext_resource type="SpriteFrames" uid="uid://phi12635dwa7" path="res://Sprites/Chara/Snail06.tres" id="7_nymir"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tr2i4"]
 
@@ -35,8 +40,8 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse2" unique_id=527401572]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("2_avh8v")
-animation = &"Idle"
+sprite_frames = ExtResource("3_hfoba")
+animation = &"Run"
 
 [node name="Horse3" type="Area2D" parent="." unique_id=2104908972 groups=["HorseGroup"]]
 position = Vector2(0, 91)
@@ -51,8 +56,8 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse3" unique_id=548588033]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("2_avh8v")
-animation = &"Boost"
+sprite_frames = ExtResource("4_ylrjl")
+animation = &"Run"
 
 [node name="Horse4" type="Area2D" parent="." unique_id=942584422 groups=["HorseGroup"]]
 position = Vector2(0, 151)
@@ -66,7 +71,7 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse4" unique_id=909543597]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("2_avh8v")
+sprite_frames = ExtResource("5_23kqq")
 animation = &"Idle"
 
 [node name="Horse5" type="Area2D" parent="." unique_id=462836802 groups=["HorseGroup"]]
@@ -81,7 +86,7 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse5" unique_id=1016573436]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("2_avh8v")
+sprite_frames = ExtResource("6_kkqlc")
 animation = &"Idle"
 
 [node name="Horse6" type="Area2D" parent="." unique_id=758196361 groups=["HorseGroup"]]
@@ -97,5 +102,5 @@ shape = SubResource("RectangleShape2D_tr2i4")
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse6" unique_id=903460159]
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
-sprite_frames = ExtResource("2_avh8v")
-animation = &"Idle"
+sprite_frames = ExtResource("7_nymir")
+animation = &"Boost"
