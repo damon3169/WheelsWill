@@ -2,17 +2,11 @@
 
 [ext_resource type="Script" uid="uid://ckga3f8ony2ss" path="res://Scripts/player_movement.gd" id="1_cvnsp"]
 [ext_resource type="SpriteFrames" uid="uid://ic7ohq4pc8xo" path="res://Sprites/Chara/Chara_J0.tres" id="2_fkybt"]
-[ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://bq6so28rqc4ek" path="res://Sprites/Enviro/CoinJ0.png" id="3_x3wgy"]
-[ext_resource type="Texture2D" uid="uid://cswomnmkdjh5k" path="res://Sprites/UI/xbox_lb.png" id="4_x3wgy"]
-[ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="5_3smsa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fkybt"]
 radius = 23.0
 height = 66.0
-
-[sub_resource type="LabelSettings" id="LabelSettings_fkybt"]
-font_size = 24
 
 [node name="Player" type="CharacterBody2D" unique_id=1950543396 groups=["Players"]]
 z_index = 1
@@ -44,54 +38,3 @@ offset_bottom = 65.83333
 theme_override_font_sizes/font_size = 24
 text = "10"
 horizontal_alignment = 1
-
-[node name="UI_Player" type="Control" parent="." unique_id=2122018254]
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_left = -20.0
-offset_top = 38.0
-offset_right = 20.0
-offset_bottom = 78.0
-
-[node name="ColorRect" type="ColorRect" parent="UI_Player" unique_id=1366003830]
-layout_mode = 0
-offset_left = -110.0
-offset_top = 32.0
-offset_right = 149.0
-offset_bottom = 134.0
-color = Color(0.45597935, 0.21298105, 0.34946266, 0.81960785)
-
-[node name="ChangeBet" type="Label" parent="UI_Player" unique_id=2011726246]
-layout_mode = 0
-offset_left = 6.5999985
-offset_top = 46.6
-offset_right = 138.6
-offset_bottom = 80.6
-theme_override_font_sizes/font_size = 26
-text = "Change bet"
-label_settings = SubResource("LabelSettings_fkybt")
-
-[node name="Bet" type="Label" parent="UI_Player" unique_id=2009414780]
-layout_mode = 0
-offset_left = 4.5999985
-offset_top = 86.6
-offset_right = 92.6
-offset_bottom = 122.6
-theme_override_font_sizes/font_size = 26
-text = "Bet!"
-
-[node name="XboxButtonColorA" type="Sprite2D" parent="UI_Player" unique_id=171300002]
-position = Vector2(-28.400002, 108.6)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("3_fkybt")
-
-[node name="XboxLb" type="Sprite2D" parent="UI_Player" unique_id=171662332]
-position = Vector2(-72.4, 62.6)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("4_x3wgy")
-
-[node name="XboxRb" type="Sprite2D" parent="UI_Player" unique_id=503751242]
-position = Vector2(-22.400002, 62.6)
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("5_3smsa")
