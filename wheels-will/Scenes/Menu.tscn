@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dbpmvwjb8nuec"]
+
+[ext_resource type="Script" uid="uid://c4l1icjsfw1n4" path="res://Scenes/buttonPlay.gd" id="1_3kf3n"]
+
+[node name="Menu" type="Node2D" unique_id=1395325640]
+
+[node name="MenuMain" type="Control" parent="." unique_id=2009771003]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1697.0
+offset_bottom = 964.0
+
+[node name="Camera2D" type="Camera2D" parent="MenuMain" unique_id=1307411822]
+position = Vector2(847, 480)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MenuMain" unique_id=1107397166]
+layout_mode = 0
+offset_right = 1692.0
+offset_bottom = 313.0
+theme_override_font_sizes/normal_font_size = 220
+text = "Wheel's WILL"
+fit_content = true
+autowrap_trim_flags = 0
+tab_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuMain" unique_id=1669833541]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -215.0
+offset_top = -430.0
+offset_right = 215.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Button" type="Button" parent="MenuMain/VBoxContainer" unique_id=2026508455]
+layout_mode = 2
+theme_override_font_sizes/font_size = 150
+text = "Play"
+script = ExtResource("1_3kf3n")
+
+[node name="Label" type="Label" parent="MenuMain/VBoxContainer" unique_id=1819913401]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="Button2" type="Button" parent="MenuMain/VBoxContainer" unique_id=109942043]
+layout_mode = 2
+theme_override_font_sizes/font_size = 150
+text = "Leave"
+
+[node name="Label2" type="Label" parent="MenuMain/VBoxContainer" unique_id=403458967]
+layout_mode = 2
+text = "
+
+
+"
+
+[connection signal="pressed" from="MenuMain/VBoxContainer/Button" to="MenuMain/VBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="MenuMain/VBoxContainer/Button2" to="MenuMain/VBoxContainer/Button" method="_on_button_2_pressed"]
