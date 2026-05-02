@@ -1,4 +1,4 @@
-extends ColorRect
+extends Node2D
 var activebet = true
 var _lastbody : Node2D = null
 var playerBet : Node2D = null
@@ -9,6 +9,8 @@ var playerBet : Node2D = null
 var bettingValue : int = 0
 var moneygain : int = 0
 var winningbet : bool = false
+var button = preload("res://Sprites/Enviro/BettingCase.png")
+var buttonPressed = preload("res://Sprites/Enviro/BettingCasePushed.png")
 
 func _ready() -> void:
 	$betmultiplayer.text = "x"+str(BetMultipler)
@@ -21,14 +23,16 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	body.bet_activeArray.append(self)
 	if(activebet == true) :
 		_lastbody = body
-		color = Color.REBECCA_PURPLE
+		$Sprite2D.texture = buttonPressed
+		#color = Color.REBECCA_PURPLE
 	
 	
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	body.bet_activeArray.erase(self)
 	if(activebet == true) :
 		_lastbody = null
-		color = Color.WHITE
+		$Sprite2D.texture = button
+		#color = Color.WHITE
 
 	
 func bet_actions(_var : int, body:Node2D) -> void:
