@@ -20,26 +20,27 @@ texture = ExtResource("2_vywrv")
 [node name="Bet_Snail0" type="Node2D" parent="." unique_id=821869919]
 
 [node name="GreenTop1" parent="Bet_Snail0" unique_id=1356991685 instance=ExtResource("1_a0dac")]
-position = Vector2(998.00006, 535)
+position = Vector2(998.00006, 518)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 4
 
 [node name="GreenTop11" parent="Bet_Snail0" unique_id=413009835 instance=ExtResource("1_a0dac")]
-position = Vector2(1000.0002, 658)
+position = Vector2(1000.0002, 641)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 2
 
 [node name="GreenTop2" parent="Bet_Snail0" unique_id=1072504650 instance=ExtResource("1_a0dac")]
-position = Vector2(1008, 819)
+position = Vector2(1008, 802)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 3
 
 [node name="GreenTop3" parent="Bet_Snail0" unique_id=1819020043 instance=ExtResource("1_a0dac")]
-position = Vector2(1010, 949)
+position = Vector2(1010, 932)
 scale = Vector2(2.5, 2.5)
 BetMultipler = 2
 
 [node name="Bet_Snail1" type="Node2D" parent="." unique_id=252744701]
+position = Vector2(0, -17)
 
 [node name="GreenTop1" parent="Bet_Snail1" unique_id=1718390963 instance=ExtResource("1_a0dac")]
 position = Vector2(1149, 535)
@@ -62,6 +63,7 @@ scale = Vector2(2.5, 2.5)
 BetMultipler = 3
 
 [node name="Bet_Snail2" type="Node2D" parent="." unique_id=1434924802]
+position = Vector2(0, -17)
 
 [node name="GreenTop1" parent="Bet_Snail2" unique_id=322744645 instance=ExtResource("1_a0dac")]
 position = Vector2(1295, 538)
@@ -84,6 +86,7 @@ scale = Vector2(2.5, 2.5)
 BetMultipler = 3
 
 [node name="Bet_Snail3" type="Node2D" parent="." unique_id=850078193]
+position = Vector2(0, -17)
 
 [node name="GreenTop1" parent="Bet_Snail3" unique_id=296066634 instance=ExtResource("1_a0dac")]
 position = Vector2(1437, 541.0001)
@@ -106,6 +109,7 @@ scale = Vector2(2.5, 2.5)
 BetMultipler = 4
 
 [node name="Bet_Snail4" type="Node2D" parent="." unique_id=251033964]
+position = Vector2(0, -17)
 
 [node name="GreenTop1" parent="Bet_Snail4" unique_id=1868597723 instance=ExtResource("1_a0dac")]
 position = Vector2(1580, 537)
@@ -128,6 +132,7 @@ scale = Vector2(2.5, 2.5)
 BetMultipler = 4
 
 [node name="Bet_Snail5" type="Node2D" parent="." unique_id=1153025808]
+position = Vector2(0, -17)
 
 [node name="GreenTop1" parent="Bet_Snail5" unique_id=95642318 instance=ExtResource("1_a0dac")]
 position = Vector2(1718, 539)
