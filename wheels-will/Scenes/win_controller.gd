@@ -19,6 +19,7 @@ func _process(delta: float) -> void:
 func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	horseGroup = get_tree().get_nodes_in_group("HorseGroup")
 	for i in range(len(horseGroup)):
+		horseGroup[i].get_child(1).play("Idle")
 		horseGroupSorted.append([horseGroup[i].id,horseGroup[i].position.x])
 	horseGroupSorted.sort_custom(func(a, b): return a[1] > b[1])
 	var HorseGroupSortedFinish : Array
@@ -27,7 +28,7 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	for  i in range(len(HorseGroupSortedFinish)):
 			for j in range(len(horseGroup)):
 				if HorseGroupSortedFinish[i] == horseGroup[j].id:
-					horseGroup[j].get_child(2).text =str("top "+str(i))
+					horseGroup[j].get_child(2).text =str("top "+str(i+1))
 	betGroup = get_tree().get_nodes_in_group("BetGroup")
 	for i in range(len(betGroup)):
 		betGroup[i].validate_bet(HorseGroupSortedFinish)

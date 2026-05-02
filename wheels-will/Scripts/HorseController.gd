@@ -10,6 +10,7 @@ var animationState = "Run"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	nextRoomButton = get_tree().get_nodes_in_group("nextRoomButton")
+	get_child(1).play("Run")
 	nextRoomButton[0].nextRound.connect(emit_nextRound)
 	pass # Replace with function body.
 
@@ -17,19 +18,17 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !gameIsWon:
-		get_child(1).animation = animationState
 		position.x+=speed*delta
 	else:
-		get_child(1).animation = "Idle"
 		pass
 
 func horseAcceleration() ->void:
 	speed+=acceleration
-	animationState = "Boost"
+	get_child(1).play("Boost")
 	print(animationState)
 	await get_tree().create_timer(1).timeout
 	speed-=acceleration
-	animationState = "Run"
+	get_child(1).play("Run")
 	pass
 
 func emit_nextRound() ->void:

@@ -146,7 +146,6 @@ position = Vector2(0, -30.000015)
 scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Run"
-frame_progress = 0.12704645
 
 [node name="Label" type="Label" parent="Horse" unique_id=345996694]
 offset_left = -118.0
@@ -254,7 +253,7 @@ shape = SubResource("RectangleShape2D_tr2i4")
 position = Vector2(0, -45)
 scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("7_nymir")
-animation = &"Boost"
+animation = &"Run"
 
 [node name="Label" type="Label" parent="Horse6" unique_id=1818140477]
 offset_left = -118.0
