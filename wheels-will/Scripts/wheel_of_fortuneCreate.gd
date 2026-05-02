@@ -37,7 +37,7 @@ func _ready() -> void:
 	var lastAngle = 0.0
 	for i in range(len(horseWeigh)):
 		total +=horseWeigh[i]
-		resetHorseWeigh.append(horseWeigh[i])
+		resetHorseWeigh = horseWeigh.duplicate()
 	for i in range(len(horseWeigh)):
 		horsePercentage.append(horseWeigh[i]/(total/100.0))
 	for i in range(len(horseWeigh)):
@@ -142,7 +142,7 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	pass # Replace with function body.
 
 func emit_nextRound() ->void:
-	horseWeigh = resetHorseWeigh
+	horseWeigh = resetHorseWeigh.duplicate()
 	rotation = 0
 	isGameWon = false
 	AddValueHorseWeigh(0,0)
