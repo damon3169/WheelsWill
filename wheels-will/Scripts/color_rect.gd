@@ -28,15 +28,15 @@ func bet_actions(_var : int) -> void:
 	print(_var)
 	activebet = false
 
-func validate_bet(_top1 : int, _top2 : int, _top3 : int) -> void:
+func validate_bet(_ranklist : Array) -> void:
 	if(BetType == "Top1") :
-		if(HorseID == _top1) :
+		if(HorseID == _ranklist[1]) :
 			winningbet = true
 	if(BetType == "Top2") :
-		if(HorseID == _top1 || HorseID == _top2) :
+		if(HorseID == _ranklist[1] || HorseID == _ranklist[2]) :
 			winningbet = true
 	if(BetType == "Top3") :
-		if(HorseID == _top1 || HorseID == _top2 || HorseID == _top3) :
+		if(HorseID == _ranklist[1] || HorseID == _ranklist[2] || HorseID == _ranklist[3]) :
 			winningbet = true
 	if(winningbet) :
 		moneygain = bettingValue*BetMultipler
