@@ -27,7 +27,9 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	betGroup = get_tree().get_nodes_in_group("BetGroup")
 	for i in range(len(betGroup)):
 		betGroup[i].validate_bet(HorseGroupSortedFinish)
+	
 	nextRoomButton[0].visible = true
+	print(nextRoomButton[0].visible)
 	pass
 
 
