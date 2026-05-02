@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://6dcqr4d61ery" path="res://Scenes/finish_line.gd" id="1_fpin6"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_tr2i4"]
-a = Vector2(8, 649)
+a = Vector2(0, 321)
 b = Vector2(0, 0)
 
 [node name="finishLine" type="Area2D" unique_id=1909128054]
