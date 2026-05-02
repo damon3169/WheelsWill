@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d2dta1hbb0a2h" path="res://Scenes/add_ambroise.tscn" id="3_hpn0r"]
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 [ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
+[ext_resource type="Texture2D" uid="uid://h0k23jgj8itn" path="res://Sprites/Enviro/BetBoard.png" id="8_hbdip"]
 [ext_resource type="Texture2D" uid="uid://csodkuaas1ig8" path="res://Sprites/Enviro/LastbestLine.png" id="8_t0ume"]
 [ext_resource type="PackedScene" uid="uid://bofmqg1dgfto1" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
 [ext_resource type="Texture2D" uid="uid://7fggc80np2vr" path="res://Sprites/Enviro/WheelCadrant.png" id="9_lpiux"]
@@ -58,10 +59,6 @@ visible = false
 position = Vector2(5, 716)
 shape = SubResource("RectangleShape2D_2jgnw")
 
-[node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
-position = Vector2(964, 528)
-texture = ExtResource("5_c1mlt")
-
 [node name="UI" parent="." unique_id=1956281826 instance=ExtResource("7_t0ume")]
 
 [node name="LastbestLine" type="Sprite2D" parent="." unique_id=114430498]
@@ -90,6 +87,10 @@ player_index = 3
 [node name="Next Round Button" parent="." unique_id=189446824 instance=ExtResource("9_cksun")]
 position = Vector2(47, 875)
 
+[node name="BetBoard" type="Sprite2D" parent="." unique_id=214408605]
+position = Vector2(1600, 755)
+texture = ExtResource("8_hbdip")
+
 [node name="WheelCadrant" type="Sprite2D" parent="." unique_id=1173226844]
 position = Vector2(185, 186)
 texture = ExtResource("9_lpiux")
@@ -101,3 +102,7 @@ texture = ExtResource("10_hbdip")
 [node name="ShamrockWheel" type="Sprite2D" parent="." unique_id=77726040]
 position = Vector2(186, 185)
 texture = ExtResource("11_28n07")
+
+[node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
+position = Vector2(964, 528)
+texture = ExtResource("5_c1mlt")
