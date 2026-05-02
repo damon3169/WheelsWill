@@ -1,21 +1,18 @@
 [gd_scene format=3 uid="uid://bxthkxt3a58lt"]
 
 [ext_resource type="Script" uid="uid://csf4ttjmcks8t" path="res://Scripts/color_rect.gd" id="1_6kqla"]
-[ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="2_bwpps"]
+[ext_resource type="Texture2D" uid="uid://ceyaj2tkw01m2" path="res://Sprites/Enviro/BettingCase.png" id="2_bwpps"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rqgy"]
 size = Vector2(7.1111107, 7.1111116)
 
-[node name="ColorRect" type="ColorRect" unique_id=1356991685 groups=["BetGroup"]]
-offset_right = 21.333336
-offset_bottom = 21.333334
+[node name="BettingCase" type="Node2D" unique_id=1718390963 groups=["BetGroup"]]
 scale = Vector2(3, 3)
 script = ExtResource("1_6kqla")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=500105985]
-visible = false
-position = Vector2(10.666668, 10.666668)
-scale = Vector2(0.21333331, 0.21333331)
+position = Vector2(10.666666, 10.666666)
+scale = Vector2(0.10666667, 0.10666667)
 texture = ExtResource("2_bwpps")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=542069387]
@@ -26,19 +23,16 @@ position = Vector2(3.555555, 3.555555)
 shape = SubResource("RectangleShape2D_7rqgy")
 
 [node name="betmultiplayer" type="Label" parent="." unique_id=1154068143]
-layout_mode = 0
-offset_left = 2.666666
-offset_right = 42.666664
+offset_right = 40.0
 offset_bottom = 22.999996
-theme_override_colors/font_color = Color(1, 0.07058824, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 0.7058824)
 text = "x3"
 
 [node name="malus" type="Label" parent="." unique_id=47853375]
-layout_mode = 0
 offset_left = 13.333333
-offset_top = 10.666667
+offset_top = -5.333333
 offset_right = 53.333332
-offset_bottom = 33.666668
+offset_bottom = 17.666668
 theme_override_colors/font_color = Color(1, 0.07058824, 0, 1)
 theme_override_font_sizes/font_size = 10
 text = "-2"

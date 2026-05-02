@@ -5,221 +5,46 @@
 [node name="BetList" type="Node" unique_id=1060818587]
 
 [node name="GreenTop1" parent="." unique_id=1356991685 instance=ExtResource("1_a0dac")]
-offset_left = 1132.0
-offset_top = 465.0
-offset_right = 1153.3333
-offset_bottom = 486.33334
+position = Vector2(829, 579)
 BetMultipler = 4
 MalusPoint = -1
 
-[node name="GreenTop2" parent="." unique_id=658641749 instance=ExtResource("1_a0dac")]
-offset_left = 957.0
-offset_top = 465.0
-offset_right = 978.33325
-offset_bottom = 486.33334
-BetMultipler = 3
-BetType = "Top2"
-
-[node name="GreenTop3" parent="." unique_id=1837188313 instance=ExtResource("1_a0dac")]
-offset_left = 785.0
-offset_top = 467.0
-offset_right = 806.3333
-offset_bottom = 488.33334
-BetMultipler = 2
-BetType = "Top3"
-
-[node name="RedTop1" parent="." unique_id=1558979742 instance=ExtResource("1_a0dac")]
-offset_left = 1133.0
-offset_top = 571.0
-offset_right = 1154.3333
-offset_bottom = 592.3334
-BetMultipler = 5
-MalusPoint = -2
-HorseID = 1
-
-[node name="RedTop2" parent="." unique_id=108192912 instance=ExtResource("1_a0dac")]
-offset_left = 958.0
-offset_top = 571.0
-offset_right = 979.33325
-offset_bottom = 592.3334
-BetMultipler = 4
-MalusPoint = -1
-HorseID = 1
-BetType = "Top2"
-
-[node name="RedTop3" parent="." unique_id=1102636698 instance=ExtResource("1_a0dac")]
-offset_left = 785.99994
-offset_top = 573.0
-offset_right = 807.33325
-offset_bottom = 594.3334
-BetMultipler = 3
-HorseID = 1
-BetType = "Top3"
-
-[node name="BlueTop1" parent="." unique_id=1760247234 instance=ExtResource("1_a0dac")]
-offset_left = 1134.0
-offset_top = 679.0
-offset_right = 1155.3333
-offset_bottom = 700.3334
-BetMultipler = 5
-MalusPoint = -2
-HorseID = 2
-
-[node name="BlueTop2" parent="." unique_id=1711986883 instance=ExtResource("1_a0dac")]
-offset_left = 959.0
-offset_top = 679.0
-offset_right = 980.33325
-offset_bottom = 700.3334
-BetMultipler = 4
-MalusPoint = -1
-HorseID = 2
-BetType = "Top2"
-
-[node name="BlueTop3" parent="." unique_id=925821873 instance=ExtResource("1_a0dac")]
-offset_left = 786.99994
-offset_top = 681.0
-offset_right = 808.33325
-offset_bottom = 702.3334
-BetMultipler = 3
-HorseID = 2
-BetType = "Top3"
-
-[node name="YellowTop1" parent="." unique_id=548466026 instance=ExtResource("1_a0dac")]
-offset_left = 1137.0
-offset_top = 781.0
-offset_right = 1158.3333
-offset_bottom = 802.3334
-BetMultipler = 6
-MalusPoint = -3
-HorseID = 3
-
-[node name="YellowTop2" parent="." unique_id=1368256745 instance=ExtResource("1_a0dac")]
-offset_left = 962.0
-offset_top = 781.0
-offset_right = 983.33325
-offset_bottom = 802.3334
-BetMultipler = 5
-MalusPoint = -2
-HorseID = 3
-BetType = "Top2"
-
-[node name="YellowTop3" parent="." unique_id=1032319462 instance=ExtResource("1_a0dac")]
-offset_left = 789.99994
-offset_top = 783.0
-offset_right = 811.33325
-offset_bottom = 804.3334
-BetMultipler = 4
-MalusPoint = -1
-HorseID = 3
-BetType = "Top3"
-
-[node name="PurpleTop1" parent="." unique_id=1304767627 instance=ExtResource("1_a0dac")]
-offset_left = 1142.0
-offset_top = 887.0
-offset_right = 1163.3333
-offset_bottom = 908.3334
-BetMultipler = 6
-MalusPoint = -3
-HorseID = 4
-
-[node name="PurpleTop2" parent="." unique_id=607231417 instance=ExtResource("1_a0dac")]
-offset_left = 967.0
-offset_top = 887.0
-offset_right = 988.33325
-offset_bottom = 908.3334
-BetMultipler = 5
-MalusPoint = -1
-HorseID = 4
-BetType = "Top2"
-
-[node name="PurpleTop3" parent="." unique_id=704727532 instance=ExtResource("1_a0dac")]
-offset_left = 794.99994
-offset_top = 889.0
-offset_right = 816.33325
-offset_bottom = 910.3334
-BetMultipler = 4
-MalusPoint = -1
-HorseID = 4
-BetType = "Top3"
-
-[node name="CyanTop1" parent="." unique_id=171755135 instance=ExtResource("1_a0dac")]
-offset_left = 1141.0
-offset_top = 985.0
-offset_right = 1162.3333
-offset_bottom = 1006.3334
-BetMultipler = 7
-MalusPoint = -5
-HorseID = 5
-
-[node name="GreenTop4" parent="." unique_id=1991653545 instance=ExtResource("1_a0dac")]
-offset_left = 1226.0
-offset_top = 465.0
-offset_right = 1247.3333
-offset_bottom = 486.33334
+[node name="GreenTop2" parent="." unique_id=1718390963 instance=ExtResource("1_a0dac")]
+position = Vector2(1006, 584)
 BetMultipler = 4
 MalusPoint = -1
 
-[node name="RedTop4" parent="." unique_id=135994537 instance=ExtResource("1_a0dac")]
-offset_left = 1227.0
-offset_top = 571.0
-offset_right = 1248.3333
-offset_bottom = 592.3334
-BetMultipler = 5
-MalusPoint = -2
-HorseID = 1
+[node name="GreenTop3" parent="." unique_id=1037665770 instance=ExtResource("1_a0dac")]
+position = Vector2(1203, 596)
+BetMultipler = 4
+MalusPoint = -1
 
-[node name="BlueTop4" parent="." unique_id=1666619224 instance=ExtResource("1_a0dac")]
-offset_left = 1228.0
-offset_top = 679.0
-offset_right = 1249.3333
-offset_bottom = 700.3334
-BetMultipler = 5
-MalusPoint = -2
-HorseID = 2
+[node name="GreenTop4" parent="." unique_id=1651154528 instance=ExtResource("1_a0dac")]
+position = Vector2(868, 718)
+BetMultipler = 4
+MalusPoint = -1
 
-[node name="YellowTop4" parent="." unique_id=2045960244 instance=ExtResource("1_a0dac")]
-offset_left = 1231.0
-offset_top = 781.0
-offset_right = 1252.3333
-offset_bottom = 802.3334
-BetMultipler = 6
-MalusPoint = -3
-HorseID = 3
+[node name="GreenTop5" parent="." unique_id=205006940 instance=ExtResource("1_a0dac")]
+position = Vector2(1033, 734)
+BetMultipler = 4
+MalusPoint = -1
 
-[node name="PurpleTop4" parent="." unique_id=2145060538 instance=ExtResource("1_a0dac")]
-offset_left = 1236.0
-offset_top = 887.0
-offset_right = 1257.3333
-offset_bottom = 908.3334
-BetMultipler = 6
-MalusPoint = -3
-HorseID = 4
+[node name="GreenTop6" parent="." unique_id=74135542 instance=ExtResource("1_a0dac")]
+position = Vector2(1194, 752)
+BetMultipler = 4
+MalusPoint = -1
 
-[node name="CyanTop4" parent="." unique_id=285022493 instance=ExtResource("1_a0dac")]
-offset_left = 1235.0
-offset_top = 985.0
-offset_right = 1256.3333
-offset_bottom = 1006.3334
-BetMultipler = 7
-MalusPoint = -5
-HorseID = 5
+[node name="GreenTop7" parent="." unique_id=1072504650 instance=ExtResource("1_a0dac")]
+position = Vector2(877, 430)
+BetMultipler = 4
+MalusPoint = -1
 
-[node name="CyanTop2" parent="." unique_id=400515288 instance=ExtResource("1_a0dac")]
-offset_left = 966.0
-offset_top = 985.0
-offset_right = 987.33325
-offset_bottom = 1006.3334
-BetMultipler = 6
-MalusPoint = -3
-HorseID = 5
-BetType = "Top2"
+[node name="GreenTop8" parent="." unique_id=1121774168 instance=ExtResource("1_a0dac")]
+position = Vector2(1047, 442)
+BetMultipler = 4
+MalusPoint = -1
 
-[node name="CyanTop3" parent="." unique_id=1244579728 instance=ExtResource("1_a0dac")]
-offset_left = 793.99994
-offset_top = 987.0
-offset_right = 815.33325
-offset_bottom = 1008.3334
-BetMultipler = 5
-MalusPoint = -2
-HorseID = 5
-BetType = "Top3"
+[node name="GreenTop9" parent="." unique_id=408237310 instance=ExtResource("1_a0dac")]
+position = Vector2(1226, 467)
+BetMultipler = 4
+MalusPoint = -1

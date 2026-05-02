@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv6ycc58j2alv"
-path="res://.godot/imported/Background_01.png-b79aec7af566616a47a1afe67b4769bf.ctex"
+uid="uid://duh3pwjxtrljg"
+path="res://.godot/imported/Spritesheetsnail03.png-257e7bd0b800430cc2f3484be3a96f44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Enviro/Background_01.png"
-dest_files=["res://.godot/imported/Background_01.png-b79aec7af566616a47a1afe67b4769bf.ctex"]
+source_file="res://Sprites/Chara/Spritesheetsnail03.png"
+dest_files=["res://.godot/imported/Spritesheetsnail03.png-257e7bd0b800430cc2f3484be3a96f44.ctex"]
 
 [params]
 

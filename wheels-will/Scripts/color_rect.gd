@@ -1,4 +1,4 @@
-extends ColorRect
+extends Node2D
 var activebet = true
 var _lastbody : Node2D = null
 var playerBet : Node2D = null
@@ -9,8 +9,14 @@ var playerBet : Node2D = null
 var bettingValue : int = 0
 var moneygain : int = 0
 var winningbet : bool = false
+var button = preload("res://Sprites/Enviro/BettingCase.png")
+var buttonPressed = preload("res://Sprites/Enviro/BettingCasePushed.png")
+var resetround
+
 
 func _ready() -> void:
+	resetround = get_tree().get_nodes_in_group("nextRoomButton")
+	resetround[0].nextRound.connect(emit_nextRound)
 	$betmultiplayer.text = "x"+str(BetMultipler)
 	if MalusPoint != 0 :
 		$malus.text = str(MalusPoint)
@@ -21,14 +27,16 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	body.bet_activeArray.append(self)
 	if(activebet == true) :
 		_lastbody = body
-		color = Color.REBECCA_PURPLE
+		$Sprite2D.texture = buttonPressed
+		#color = Color.REBECCA_PURPLE
 	
 	
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	body.bet_activeArray.erase(self)
 	if(activebet == true) :
 		_lastbody = null
-		color = Color.WHITE
+		$Sprite2D.texture = button
+		#color = Color.WHITE
 
 	
 func bet_actions(_var : int, body:Node2D) -> void:
@@ -52,3 +60,14 @@ func validate_bet(_ranklist : Array) -> void:
 			moneygain = MalusPoint
 		playerBet.score += moneygain
 		print("Winnings ",playerBet.player_index," :",playerBet.score)
+		
+
+func emit_nextRound() ->void:
+	activebet = true
+	_lastbody = null
+	playerBet = null
+	bettingValue = 0
+	moneygain = 0
+	winningbet = false
+	$Sprite2D.texture = button
+pass
