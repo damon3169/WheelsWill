@@ -7,7 +7,7 @@
 size = Vector2(7.1111107, 7.1111116)
 
 [node name="BettingCase" type="Node2D" unique_id=1718390963 groups=["BetGroup"]]
-scale = Vector2(3, 3)
+scale = Vector2(4, 4)
 script = ExtResource("1_6kqla")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=500105985]

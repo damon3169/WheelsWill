@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="5_3smsa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fkybt"]
-radius = 23.0
-height = 66.0
+radius = 19.0
+height = 56.0
 
 [sub_resource type="LabelSettings" id="LabelSettings_fkybt"]
 font_size = 24
@@ -23,10 +23,10 @@ unique_name_in_owner = true
 position = Vector2(0, 15)
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("2_fkybt")
-animation = &"Walking"
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663686894]
-position = Vector2(0, 29)
+position = Vector2(0, 34)
 shape = SubResource("CapsuleShape2D_fkybt")
 
 [node name="Ressources" type="Label" parent="." unique_id=480117197]
