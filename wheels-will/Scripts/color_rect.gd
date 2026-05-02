@@ -1,6 +1,7 @@
 extends ColorRect
 var activebet = true
 var _lastbody : Node2D = null
+var playerBet : Node2D = null
 @export var BetMultipler : int = 0
 @export var MalusPoint : int = 0
 @export_range(0,5) var HorseID : int = 0
@@ -17,20 +18,22 @@ func _ready() -> void:
 		$malus.hide()
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	body.bet_activeArray.append(self)
 	if(activebet == true) :
 		_lastbody = body
 		color = Color.REBECCA_PURPLE
-	body.bet_active = self
-	print(body.bet_active)
+	
 	
 func _on_area_2d_body_exited(body: Node2D) -> void:
+	body.bet_activeArray.erase(self)
 	if(activebet == true) :
 		_lastbody = null
 		color = Color.WHITE
-	body.bet_active = null
+
 	
-func bet_actions(_var : int) -> void:
+func bet_actions(_var : int, body:Node2D) -> void:
 	activebet = false
+	playerBet =body
 
 func validate_bet(_ranklist : Array) -> void:
 	if !activebet :
@@ -47,5 +50,5 @@ func validate_bet(_ranklist : Array) -> void:
 			moneygain = bettingValue*BetMultipler
 		else :
 			moneygain = MalusPoint
-		_lastbody.score += moneygain
-		print("Winnings ",_lastbody.player_index," :",_lastbody.score)
+		playerBet.score += moneygain
+		print("Winnings ",playerBet.player_index," :",playerBet.score)

@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var player_index = 0
-var bet_active : ColorRect = null
+var bet_activeArray : Array
 @export var movement_speed : float = 500
 var character_direction : Vector2
 var score = 0
@@ -33,18 +33,18 @@ func _physics_process(delta: float):
 
 		
 func _input(_event: InputEvent) -> void:
-	if bet_active != null :
+	if len(bet_activeArray) != 0 :
 		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_A) && !list_bet.is_empty() :
-			if bet_active.activebet :
+			if bet_activeArray[0].activebet :
 				var instance = coincreation.instantiate()
 				var _s = list_bet.pop_at(_n)
-				bet_active.bettingValue = _s
+				bet_activeArray[0].bettingValue = _s
 				instance.position = Vector2(0,0)
 				instance.get_child(0).playerid = player_index 
 				instance.get_child(1).text = str(_s)
-				bet_active.add_child(instance)
+				bet_activeArray[0].add_child(instance)
 				
-				bet_active.bet_actions(_s)
+				bet_activeArray[0].bet_actions(_s,self)
 				if(_n > 0) :
 					_n = _n-1
 				$Ressources.hide()	
@@ -56,7 +56,7 @@ func _input(_event: InputEvent) -> void:
 			_n = _n-1
 		if !list_bet.is_empty() :
 			$Ressources.text = str(list_bet[_n])
-			if bet_active.activebet :
+			if bet_activeArray[0].activebet :
 				$Ressources.show()
 				$UI_Player.show()
 	else :
