@@ -39,6 +39,7 @@ func _input(_event: InputEvent) -> void:
 				var _s = list_bet.pop_at(_n)
 				bet_active.bettingValue = _s
 				instance.position = Vector2(0,0)
+				instance.get_child(0).playerid = player_index 
 				instance.get_child(1).text = str(_s)
 				bet_active.add_child(instance)
 				

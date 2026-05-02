@@ -1,25 +1,47 @@
 [gd_scene format=3 uid="uid://bxthkxt3a58lt"]
 
 [ext_resource type="Script" uid="uid://csf4ttjmcks8t" path="res://Scripts/color_rect.gd" id="1_6kqla"]
+[ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="2_bwpps"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7rqgy"]
-size = Vector2(14.222221, 14.222223)
+size = Vector2(7.1111107, 7.1111116)
 
-[node name="ColorRect" type="ColorRect" unique_id=1356991685]
-offset_left = -64.0
-offset_top = -64.0
-offset_right = -21.333332
-offset_bottom = -21.333332
+[node name="ColorRect" type="ColorRect" unique_id=1356991685 groups=["BetGroup"]]
+offset_right = 21.333336
+offset_bottom = 21.333334
 scale = Vector2(3, 3)
-color = Color(0.8123662, 0.4100209, 0.63743347, 0.795)
 script = ExtResource("1_6kqla")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=500105985]
+visible = false
+position = Vector2(10.666668, 10.666668)
+scale = Vector2(0.21333331, 0.21333331)
+texture = ExtResource("2_bwpps")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=542069387]
 scale = Vector2(3, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=213262420]
-position = Vector2(7.111111, 7.111111)
+position = Vector2(3.555555, 3.555555)
 shape = SubResource("RectangleShape2D_7rqgy")
+
+[node name="betmultiplayer" type="Label" parent="." unique_id=1154068143]
+layout_mode = 0
+offset_left = 2.666666
+offset_right = 42.666664
+offset_bottom = 22.999996
+theme_override_colors/font_color = Color(1, 0.07058824, 1, 1)
+text = "x3"
+
+[node name="malus" type="Label" parent="." unique_id=47853375]
+layout_mode = 0
+offset_left = 13.333333
+offset_top = 10.666667
+offset_right = 53.333332
+offset_bottom = 33.666668
+theme_override_colors/font_color = Color(1, 0.07058824, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "-2"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -9,36 +9,42 @@ var bettingValue : int = 0
 var moneygain : int = 0
 var winningbet : bool = false
 
+func _ready() -> void:
+	$betmultiplayer.text = "x"+str(BetMultipler)
+	if MalusPoint != 0 :
+		$malus.text = str(MalusPoint)
+	else :
+		$malus.hide()
+
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(activebet == true) :
-		color = Color.BROWN
 		_lastbody = body
+		color = Color.REBECCA_PURPLE
 	body.bet_active = self
 	print(body.bet_active)
 	
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if(activebet == true) :
-		color = Color.REBECCA_PURPLE
 		_lastbody = null
+		color = Color.WHITE
 	body.bet_active = null
-	print(body.bet_active)
 	
 func bet_actions(_var : int) -> void:
-	color = Color.BLACK
-	print(_var)
+
 	activebet = false
 
 func validate_bet(_ranklist : Array) -> void:
 	if(BetType == "Top1") :
-		if(HorseID == _ranklist[1]) :
+		if(HorseID == _ranklist[0]) :
 			winningbet = true
 	if(BetType == "Top2") :
-		if(HorseID == _ranklist[1] || HorseID == _ranklist[2]) :
+		if(HorseID == _ranklist[0] || HorseID == _ranklist[1]) :
 			winningbet = true
 	if(BetType == "Top3") :
-		if(HorseID == _ranklist[1] || HorseID == _ranklist[2] || HorseID == _ranklist[3]) :
+		if(HorseID == _ranklist[0] || HorseID == _ranklist[1] || HorseID == _ranklist[2]) :
 			winningbet = true
 	if(winningbet) :
 		moneygain = bettingValue*BetMultipler
 	else :
 		moneygain = MalusPoint
+	print("Winnings:",moneygain)

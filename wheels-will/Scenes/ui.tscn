@@ -1,0 +1,232 @@
+[gd_scene format=3 uid="uid://yh41x3m2oayx"]
+
+[node name="UI" type="Control" unique_id=1956281826]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Green" type="Label" parent="." unique_id=1085552500]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = -89.00006
+offset_top = -101.00006
+offset_right = -12.000061
+offset_bottom = -64.708374
+theme_override_colors/font_color = Color(0.0061995955, 0.36001852, 8.663535e-07, 1)
+theme_override_font_sizes/font_size = 26
+text = "Green"
+
+[node name="Red" type="Label" parent="." unique_id=718646077]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = -64.00006
+offset_top = 11.999939
+offset_right = 12.999939
+offset_bottom = 48.291626
+theme_override_colors/font_color = Color(0.7882353, 0.14117648, 0.17254902, 1)
+theme_override_font_sizes/font_size = 26
+text = "Red"
+
+[node name="Blue" type="Label" parent="." unique_id=1622638065]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = -72.00006
+offset_top = 114.99994
+offset_right = 4.999939
+offset_bottom = 151.29163
+theme_override_colors/font_color = Color(0.030642634, 0, 0.51357186, 1)
+theme_override_font_sizes/font_size = 26
+text = "Blue"
+
+[node name="Yellow" type="Label" parent="." unique_id=1552566306]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = -88.00006
+offset_top = 221.99994
+offset_right = -6.000061
+offset_bottom = 258.29163
+theme_override_colors/font_color = Color(0.5647059, 0.44705883, 0.02745098, 1)
+theme_override_font_sizes/font_size = 26
+text = "Yellow"
+
+[node name="Purple" type="Label" parent="." unique_id=570491282]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = -83.00006
+offset_top = 328.99994
+offset_right = -6.1035156e-05
+offset_bottom = 365.29163
+theme_override_colors/font_color = Color(0.45091546, 0.061021782, 0.5336732, 1)
+theme_override_font_sizes/font_size = 26
+text = "Purple"
+
+[node name="Cyan" type="Label" parent="." unique_id=1584776788]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = -72.00006
+offset_top = 434.99994
+offset_right = 4.999939
+offset_bottom = 471.2917
+theme_override_colors/font_color = Color(3.3691526e-07, 0.31702623, 0.45978373, 1)
+theme_override_font_sizes/font_size = 26
+text = "Cyan"
+
+[node name="Green2" type="Label" parent="." unique_id=713538361]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 623.99994
+offset_top = -98.00006
+offset_right = 700.99994
+offset_bottom = -61.708374
+theme_override_colors/font_color = Color(0.0061995955, 0.36001852, 8.663535e-07, 1)
+theme_override_font_sizes/font_size = 26
+text = "Green"
+
+[node name="Red2" type="Label" parent="." unique_id=1605930654]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 627.99994
+offset_top = 14.999939
+offset_right = 704.99994
+offset_bottom = 51.291626
+theme_override_colors/font_color = Color(0.7882353, 0.14117648, 0.17254902, 1)
+theme_override_font_sizes/font_size = 26
+text = "Red"
+
+[node name="Blue2" type="Label" parent="." unique_id=1200452108]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 624.99994
+offset_top = 119.99994
+offset_right = 701.99994
+offset_bottom = 156.29163
+theme_override_colors/font_color = Color(0.030642634, 0, 0.51357186, 1)
+theme_override_font_sizes/font_size = 26
+text = "Blue"
+
+[node name="Yellow2" type="Label" parent="." unique_id=1563635292]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 624.99994
+offset_top = 224.99994
+offset_right = 706.99994
+offset_bottom = 261.29163
+theme_override_colors/font_color = Color(0.5647059, 0.44705883, 0.02745098, 1)
+theme_override_font_sizes/font_size = 26
+text = "Yellow"
+
+[node name="Purple2" type="Label" parent="." unique_id=1631559730]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 629.99994
+offset_top = 329.99994
+offset_right = 712.99994
+offset_bottom = 366.29163
+theme_override_colors/font_color = Color(0.45091546, 0.061021782, 0.5336732, 1)
+theme_override_font_sizes/font_size = 26
+text = "Purple"
+
+[node name="Cyan2" type="Label" parent="." unique_id=1268209780]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 624.99994
+offset_top = 437.99994
+offset_right = 701.99994
+offset_bottom = 474.2917
+theme_override_colors/font_color = Color(3.3691526e-07, 0.31702623, 0.45978373, 1)
+theme_override_font_sizes/font_size = 26
+text = "Cyan"
+
+[node name="TOP 3" type="Label" parent="." unique_id=263566208]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 87.99994
+offset_top = -169.00006
+offset_right = 174.99994
+offset_bottom = -122.93756
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 33
+text = "Top 3"
+
+[node name="TOP 2" type="Label" parent="." unique_id=803715364]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 261.99994
+offset_top = -170.00006
+offset_right = 348.99994
+offset_bottom = -123.93756
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 33
+text = "Top 2"
+
+[node name="TOP 1" type="Label" parent="." unique_id=627813861]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.175001
+anchor_top = 14.175001
+anchor_right = 17.175001
+anchor_bottom = 14.175001
+offset_left = 466.99994
+offset_top = -167.00006
+offset_right = 582.99994
+offset_bottom = -120.93756
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 33
+text = "Winner"

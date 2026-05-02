@@ -18,9 +18,13 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 	for i in range(len(horseGroup)):
 		horseGroupSorted.append([horseGroup[i].id,horseGroup[i].position.x])
 	horseGroupSorted.sort_custom(func(a, b): return a[1] > b[1])
+	var HorseGroupSortedFinish : Array
+	for  i in range(len(horseGroupSorted)):
+		HorseGroupSortedFinish.append(horseGroupSorted[i][0])
 	betGroup = get_tree().get_nodes_in_group("BetGroup")
 	for i in range(len(betGroup)):
-		betGroup[i].validate_bet(horseGroupSorted)
+		print("Array :",HorseGroupSortedFinish)
+		betGroup[i].validate_bet(HorseGroupSortedFinish)
 	pass
 
 
