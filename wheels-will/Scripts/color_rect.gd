@@ -1,5 +1,6 @@
 extends Node2D
 var activebet = true
+var betclosed = false
 var _lastbody : Node2D = null
 var playerBet : Node2D = null
 @export var BetMultipler : int = 0
@@ -25,7 +26,7 @@ func _ready() -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	body.bet_activeArray.append(self)
-	if(activebet == true) :
+	if(activebet == true &&  betclosed == false) :
 		_lastbody = body
 		$Sprite2D.texture = buttonPressed
 		#color = Color.REBECCA_PURPLE
@@ -33,7 +34,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	body.bet_activeArray.erase(self)
-	if(activebet == true) :
+	if(activebet == true && betclosed == false) :
 		_lastbody = null
 		$Sprite2D.texture = button
 		#color = Color.WHITE
@@ -64,6 +65,7 @@ func validate_bet(_ranklist : Array) -> void:
 
 func emit_nextRound() ->void:
 	activebet = true
+	betclosed = false
 	_lastbody = null
 	playerBet = null
 	bettingValue = 0

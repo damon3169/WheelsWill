@@ -52,7 +52,7 @@ func _physics_process(delta: float):
 
 		
 func _input(_event: InputEvent) -> void:
-	if len(bet_activeArray) != 0 :
+	if len(bet_activeArray) != 0  && !bet_activeArray[0].betclosed :
 		if Input.is_joy_button_pressed(player_index, JOY_BUTTON_A) && !list_bet.is_empty() :
 			if bet_activeArray[0].activebet :
 				var instance = coincreation.instantiate()

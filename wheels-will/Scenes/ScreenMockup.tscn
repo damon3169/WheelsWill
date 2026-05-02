@@ -6,11 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://d2dta1hbb0a2h" path="res://Scenes/add_ambroise.tscn" id="3_hpn0r"]
 [ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 [ext_resource type="PackedScene" uid="uid://yh41x3m2oayx" path="res://Scenes/ui.tscn" id="7_t0ume"]
-[ext_resource type="Texture2D" uid="uid://csodkuaas1ig8" path="res://Sprites/Enviro/LastbestLine.png" id="8_t0ume"]
-[ext_resource type="PackedScene" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
+[ext_resource type="PackedScene" uid="uid://bofmqg1dgfto1" path="res://Scenes/next_round_button.tscn" id="9_cksun"]
 [ext_resource type="Texture2D" uid="uid://7fggc80np2vr" path="res://Sprites/Enviro/WheelCadrant.png" id="9_lpiux"]
 [ext_resource type="Texture2D" uid="uid://rax3jcedk2md" path="res://Sprites/Enviro/Pointeur.png" id="10_hbdip"]
 [ext_resource type="Texture2D" uid="uid://d0te85ktgndim" path="res://Sprites/Enviro/ShamrockWheel.png" id="11_28n07"]
+[ext_resource type="PackedScene" uid="uid://cgvgn6pfpmv0s" path="res://Scenes/lastbest_line.tscn" id="11_lpiux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -64,10 +64,6 @@ texture = ExtResource("5_c1mlt")
 
 [node name="UI" parent="." unique_id=1956281826 instance=ExtResource("7_t0ume")]
 
-[node name="LastbestLine" type="Sprite2D" parent="." unique_id=114430498]
-position = Vector2(1677, 189)
-texture = ExtResource("8_t0ume")
-
 [node name="Player0" parent="." unique_id=1950543396 instance=ExtResource("3_2jgnw")]
 z_index = 20
 position = Vector2(194, 504)
@@ -88,10 +84,6 @@ position = Vector2(178, 894)
 player_index = 3
 
 [node name="Next Round Button" parent="." unique_id=189446824 instance=ExtResource("9_cksun")]
-offset_left = -123.0
-offset_top = 6.0
-offset_right = 1868.0
-offset_bottom = 1141.0
 
 [node name="WheelCadrant" type="Sprite2D" parent="." unique_id=1173226844]
 position = Vector2(185, 186)
@@ -104,3 +96,6 @@ texture = ExtResource("10_hbdip")
 [node name="ShamrockWheel" type="Sprite2D" parent="." unique_id=77726040]
 position = Vector2(186, 185)
 texture = ExtResource("11_28n07")
+
+[node name="LastbestLine2" parent="." unique_id=1894226418 instance=ExtResource("11_lpiux")]
+position = Vector2(1461, 191)
