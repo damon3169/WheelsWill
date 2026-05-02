@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cgvgn6pfpmv0s"]
+
+[ext_resource type="Texture2D" uid="uid://csodkuaas1ig8" path="res://Sprites/Enviro/LastbestLine.png" id="1_rkhjr"]
+[ext_resource type="Script" uid="uid://b7l5xwhowk37g" path="res://Scenes/lastbest_line.gd" id="2_yaq6w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rkhjr"]
+size = Vector2(12, 342)
+
+[node name="LastbestLine" type="Sprite2D" unique_id=1894226418]
+texture = ExtResource("1_rkhjr")
+script = ExtResource("2_yaq6w")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1275633006]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=246344859]
+position = Vector2(-2, -2)
+shape = SubResource("RectangleShape2D_rkhjr")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
