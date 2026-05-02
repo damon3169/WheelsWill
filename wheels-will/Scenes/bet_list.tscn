@@ -13,6 +13,7 @@ texture = ExtResource("1_2nboi")
 centered = false
 
 [node name="BetBoard" type="Sprite2D" parent="." unique_id=707194705]
+visible = false
 position = Vector2(1416, 755)
 texture = ExtResource("2_vywrv")
 
