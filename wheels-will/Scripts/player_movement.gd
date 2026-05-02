@@ -61,6 +61,7 @@ func _physics_process(delta: float):
 		if %sprite.animation != "Idle": %sprite.animation = "Idle"
 		
 	move_and_slide()
+	$Score.text = str(score)
 
 		
 func _input(_event: InputEvent) -> void:
