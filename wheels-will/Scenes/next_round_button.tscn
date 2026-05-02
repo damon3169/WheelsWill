@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bofmqg1dgfto1"]
+
+[ext_resource type="Script" uid="uid://baep4hxy7elrv" path="res://Scenes/buttonNextRound.gd" id="1_pr60v"]
+
+[node name="Next Round Button" type="Control" unique_id=189446824]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -28.0
+offset_top = -21.0
+offset_right = 1963.0
+offset_bottom = 1114.0
+
+[node name="Button" type="Button" parent="." unique_id=380132848 groups=["nextRoomButton"]]
+visible = false
+layout_mode = 0
+offset_left = 217.0
+offset_top = 493.0
+offset_right = 1513.0
+offset_bottom = 853.0
+theme_override_font_sizes/font_size = 100
+text = "Next round"
+script = ExtResource("1_pr60v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=412673318]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

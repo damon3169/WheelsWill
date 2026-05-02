@@ -10,8 +10,9 @@ extends Node2D
 @export var horsePercentage = Array([], TYPE_FLOAT, "", null) 
 @export var horseAngle = Array([], TYPE_FLOAT, "", null) 
 @export var horseColor = Array([], TYPE_COLOR, "", null) 
+@export var resetHorseWeigh= Array([], TYPE_FLOAT, "", null) 
 @export var horseCollisions :Array
-
+var scene = load("res://Scenes/ScreenMockup.tscn")
 @export var rotationSpeed:float=5
 @export var lastWinner:int =0
 @export var timer =2.0
@@ -25,14 +26,18 @@ var choosingWinner:bool = true
 var isGameWon = false
 var x : float
 var time:float = 0
+var nextRoomButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	nextRoomButton = get_tree().get_nodes_in_group("nextRoomButton")
+	nextRoomButton[0].nextRound.connect(emit_nextRound)
 	horseGroup= get_tree().get_nodes_in_group("HorseGroup")
 	var total =0
 	var lastAngle = 0.0
 	for i in range(len(horseWeigh)):
 		total +=horseWeigh[i]
+		resetHorseWeigh.append(horseWeigh[i])
 	for i in range(len(horseWeigh)):
 		horsePercentage.append(horseWeigh[i]/(total/100.0))
 	for i in range(len(horseWeigh)):
@@ -135,3 +140,10 @@ func _on_finish_line_horse_won(horseHasWon: bool, horseID: int) -> void:
 		horseGroup[i].gameIsWon = true
 		pass
 	pass # Replace with function body.
+
+func emit_nextRound() ->void:
+	horseWeigh = resetHorseWeigh
+	rotation = 0
+	isGameWon = false
+	AddValueHorseWeigh(0,0)
+	pass
