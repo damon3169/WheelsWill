@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ulyllv180val" path="res://Sprites/Enviro/TestSprite_square.png" id="1_hr8vm"]
 [ext_resource type="PackedScene" uid="uid://bxthkxt3a58lt" path="res://Scenes/color_rect.tscn" id="2_pjhtq"]
 [ext_resource type="PackedScene" uid="uid://c5cdgjbjbanm2" path="res://Scenes/player.tscn" id="3_2jgnw"]
+[ext_resource type="Texture2D" uid="uid://mgc46cru0b76" path="res://Sprites/Enviro/BackgroundOverlay.png" id="5_c1mlt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjhtq"]
 size = Vector2(1910, 11)
@@ -235,3 +236,7 @@ position = Vector2(5, 716)
 shape = SubResource("RectangleShape2D_2jgnw")
 
 [node name="Coin" type="Sprite2D" parent="." unique_id=363807541]
+
+[node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
+position = Vector2(964, 528)
+texture = ExtResource("5_c1mlt")
