@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c5cdgjbjbanm2"]
 
 [ext_resource type="Script" uid="uid://ckga3f8ony2ss" path="res://Scripts/player_movement.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://bp61174uqs8my" path="res://Sprites/Chara/Shadow.png" id="2_3smsa"]
 [ext_resource type="SpriteFrames" uid="uid://ic7ohq4pc8xo" path="res://Sprites/Chara/Chara_J0.tres" id="2_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://bq6so28rqc4ek" path="res://Sprites/Enviro/CoinJ0.png" id="3_x3wgy"]
@@ -18,6 +19,12 @@ font_size = 24
 z_index = 1
 motion_mode = 1
 script = ExtResource("1_cvnsp")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=1235917469]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(1, 64)
+scale = Vector2(0.23, 0.25)
+texture = ExtResource("2_3smsa")
 
 [node name="sprite" type="AnimatedSprite2D" parent="." unique_id=1563426703]
 unique_name_in_owner = true

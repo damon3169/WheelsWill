@@ -7,11 +7,13 @@
 [node name="BetList" type="Node" unique_id=1060818587]
 
 [node name="Background01" type="Sprite2D" parent="." unique_id=1408173496]
+visible = false
 position = Vector2(-25, -25)
 texture = ExtResource("1_2nboi")
 centered = false
 
 [node name="BetBoard" type="Sprite2D" parent="." unique_id=707194705]
+visible = false
 position = Vector2(1416, 755)
 texture = ExtResource("2_vywrv")
 
