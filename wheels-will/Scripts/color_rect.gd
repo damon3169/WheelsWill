@@ -11,8 +11,12 @@ var moneygain : int = 0
 var winningbet : bool = false
 var button = preload("res://Sprites/Enviro/BettingCase.png")
 var buttonPressed = preload("res://Sprites/Enviro/BettingCasePushed.png")
+var resetround
+
 
 func _ready() -> void:
+	resetround = get_tree().get_nodes_in_group("nextRoomButton")
+	resetround[0].nextRound.connect(emit_nextRound)
 	$betmultiplayer.text = "x"+str(BetMultipler)
 	if MalusPoint != 0 :
 		$malus.text = str(MalusPoint)
@@ -56,3 +60,14 @@ func validate_bet(_ranklist : Array) -> void:
 			moneygain = MalusPoint
 		playerBet.score += moneygain
 		print("Winnings ",playerBet.player_index," :",playerBet.score)
+		
+
+func emit_nextRound() ->void:
+	activebet = true
+	_lastbody = null
+	playerBet = null
+	bettingValue = 0
+	moneygain = 0
+	winningbet = false
+	$Sprite2D.texture = button
+pass

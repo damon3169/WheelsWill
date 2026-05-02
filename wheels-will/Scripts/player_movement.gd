@@ -5,15 +5,18 @@ var bet_activeArray : Array
 @export var movement_speed : float = 500
 var character_direction : Vector2
 var score = 0
-var list_bet = [3, 4, 5, 7]
+var list_bet = [3, 4, 5, 6]
 var _n = 0;
 var coincreation = preload("res://Scenes/coin_creation.tscn")
 var chara_0 = preload("res://Sprites/Chara/Chara_J0.tres")
 var chara_1 = preload("res://Sprites/Chara/Chara_J1.tres")
 var chara_2 = preload("res://Sprites/Chara/Chara_J2.tres")
 var chara_3 = preload("res://Sprites/Chara/Chara_J3.tres")
+var resetround
 
 func _ready() -> void:
+	resetround = get_tree().get_nodes_in_group("nextRoomButton")
+	resetround[0].nextRound.connect(emit_nextRound)
 	match player_index :
 		0:
 			$sprite.sprite_frames = chara_0
@@ -79,3 +82,9 @@ func _input(_event: InputEvent) -> void:
 	else :
 		$Ressources.hide()	
 		$UI_Player.hide()
+		
+func emit_nextRound() ->void:
+	list_bet = [3, 4, 5, 6]
+	_n = 0;
+	get_tree().call_group("coins", "queue_free")
+pass

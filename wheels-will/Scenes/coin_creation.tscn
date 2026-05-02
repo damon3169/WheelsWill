@@ -9,7 +9,7 @@ subpixel_positioning = 0
 [sub_resource type="FontVariation" id="FontVariation_ymayy"]
 base_font = SubResource("SystemFont_ymayy")
 
-[node name="CoinCreation" type="Node2D" unique_id=670618429]
+[node name="CoinCreation" type="Node2D" unique_id=670618429 groups=["coins"]]
 z_index = 20
 
 [node name="CoinSprite" type="Sprite2D" parent="." unique_id=394976944]

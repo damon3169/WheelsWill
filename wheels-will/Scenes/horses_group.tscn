@@ -25,7 +25,8 @@ shape = SubResource("RectangleShape2D_tr2i4")
 position = Vector2(0, -30.000015)
 scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
-animation = &"Idle"
+animation = &"Run"
+frame_progress = 0.12704645
 
 [node name="Horse2" type="Area2D" parent="." unique_id=79920566 groups=["HorseGroup"]]
 position = Vector2(0, 36)
