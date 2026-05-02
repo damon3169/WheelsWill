@@ -26,6 +26,7 @@ BetGroup=""
 Players=""
 nextRoomButton=""
 coins=""
+result=""
 
 [gui]
 
