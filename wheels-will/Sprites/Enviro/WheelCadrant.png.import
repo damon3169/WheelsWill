@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv6ycc58j2alv"
-path="res://.godot/imported/Background_01.png-b79aec7af566616a47a1afe67b4769bf.ctex"
+uid="uid://7fggc80np2vr"
+path="res://.godot/imported/WheelCadrant.png-143071dd0b4c03eaf625ebd743632034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Enviro/Background_01.png"
-dest_files=["res://.godot/imported/Background_01.png-b79aec7af566616a47a1afe67b4769bf.ctex"]
+source_file="res://Sprites/Enviro/WheelCadrant.png"
+dest_files=["res://.godot/imported/WheelCadrant.png-143071dd0b4c03eaf625ebd743632034.ctex"]
 
 [params]
 

@@ -13,12 +13,12 @@ script = ExtResource("1_2ad4s")
 acceleration = 30
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Horse" unique_id=1776959736]
-position = Vector2(54, 0)
+position = Vector2(54, 15)
 shape = SubResource("RectangleShape2D_tr2i4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse" unique_id=1231263038]
-position = Vector2(0, -39)
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -30.000015)
+scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Run"
 frame_progress = 0.12704645
@@ -34,8 +34,8 @@ position = Vector2(54, 0)
 shape = SubResource("RectangleShape2D_tr2i4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse2" unique_id=527401572]
-position = Vector2(0, -39)
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -45)
+scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Idle"
 
@@ -50,8 +50,8 @@ position = Vector2(54, 0)
 shape = SubResource("RectangleShape2D_tr2i4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse3" unique_id=548588033]
-position = Vector2(0, -39)
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -45)
+scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Boost"
 
@@ -65,8 +65,8 @@ position = Vector2(54, 0)
 shape = SubResource("RectangleShape2D_tr2i4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse4" unique_id=909543597]
-position = Vector2(0, -39)
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -45)
+scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Idle"
 
@@ -80,8 +80,8 @@ position = Vector2(54, 0)
 shape = SubResource("RectangleShape2D_tr2i4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse5" unique_id=1016573436]
-position = Vector2(0, -39)
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -45)
+scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Idle"
 
@@ -96,7 +96,7 @@ position = Vector2(54, 0)
 shape = SubResource("RectangleShape2D_tr2i4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="Horse6" unique_id=903460159]
-position = Vector2(0, -39)
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -45)
+scale = Vector2(0.35, 0.35)
 sprite_frames = ExtResource("2_avh8v")
 animation = &"Idle"
