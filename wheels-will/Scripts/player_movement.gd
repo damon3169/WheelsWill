@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var player_index = 0
+var listcontroller : Array
 var bet_activeArray : Array
 @export var movement_speed : float = 500
 var character_direction : Vector2
@@ -19,6 +20,9 @@ var coin_3 = preload("res://Sprites/Enviro/CoinJ3.png")
 var resetround
 
 func _ready() -> void:
+	listcontroller = Input.get_connected_joypads()
+	if  player_index+1 > listcontroller.size() :
+		queue_free()
 	resetround = get_tree().get_nodes_in_group("nextRoomButton")
 	resetround[0].nextRound.connect(emit_nextRound)
 	match player_index :
