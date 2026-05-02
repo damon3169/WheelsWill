@@ -25,7 +25,6 @@ func _process(delta: float) -> void:
 func horseAcceleration() ->void:
 	speed+=acceleration
 	get_child(1).play("Boost")
-	print(animationState)
 	await get_tree().create_timer(1).timeout
 	speed-=acceleration
 	get_child(1).play("Run")
@@ -33,5 +32,6 @@ func horseAcceleration() ->void:
 
 func emit_nextRound() ->void:
 	gameIsWon = false
+	get_child(2).text =""
 	self.position.x = 0
 	pass
