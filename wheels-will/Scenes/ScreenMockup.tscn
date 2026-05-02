@@ -28,6 +28,9 @@ centered = false
 
 [node name="BetList" parent="." unique_id=1060818587 instance=ExtResource("3_6ktmq")]
 
+[node name="LastbestLine" parent="." unique_id=1894226418 instance=ExtResource("11_lpiux")]
+position = Vector2(1451, 184)
+
 [node name="AddAmbroise" parent="." unique_id=2117370528 instance=ExtResource("3_hpn0r")]
 
 [node name="Wall" type="StaticBody2D" parent="." unique_id=1550762814]
@@ -95,9 +98,6 @@ texture = ExtResource("11_28n07")
 [node name="BackgroundOverlay" type="Sprite2D" parent="." unique_id=339321630]
 position = Vector2(964, 528)
 texture = ExtResource("5_c1mlt")
-
-[node name="LastbestLine" parent="." unique_id=1894226418 instance=ExtResource("11_lpiux")]
-position = Vector2(1451, 184)
 
 [node name="UI_Shorcuts" parent="." unique_id=894886354 instance=ExtResource("13_28n07")]
 offset_left = 922.0
