@@ -58,6 +58,7 @@ func _input(_event: InputEvent) -> void:
 				instance.position = Vector2(0,0)
 				instance.get_child(0).playerid = player_index 
 				instance.get_child(1).text = str(_s)
+				instance.z_index = 15
 				bet_activeArray[0].add_child(instance)
 				
 				bet_activeArray[0].bet_actions(_s,self)
