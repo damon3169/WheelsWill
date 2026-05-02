@@ -33,7 +33,6 @@ func onAllPlayerReset() -> void:
 		print(get_parent().get_parent().get_parent().get_child(1))
 		for i in range(len(resultPlayers)):
 			get_parent().get_parent().get_parent().get_child(1).arrayScrorePlayer.append(resultPlayers[i])
-		
 		get_tree().change_scene_to_file("res://Scenes/resultScreen.tscn")
 		
 

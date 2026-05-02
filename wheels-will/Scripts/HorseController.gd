@@ -33,5 +33,6 @@ func horseAcceleration() ->void:
 func emit_nextRound() ->void:
 	gameIsWon = false
 	get_child(2).text =""
+	get_child(1).play("Run")
 	self.position.x = 0
 	pass

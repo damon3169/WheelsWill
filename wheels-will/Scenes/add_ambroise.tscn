@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d2dta1hbb0a2h"]
 
 [ext_resource type="PackedScene" uid="uid://sdaqrwlpvf3t" path="res://Scenes/finish_line.tscn" id="1_4ecki"]
-[ext_resource type="PackedScene" path="res://Scenes/cursor_wheel.tscn" id="2_i7grj"]
+[ext_resource type="PackedScene" uid="uid://buv0vcampbnsy" path="res://Scenes/cursor_wheel.tscn" id="2_i7grj"]
 [ext_resource type="PackedScene" uid="uid://djulawtsygag1" path="res://Scenes/horses_group.tscn" id="3_dlnnw"]
 [ext_resource type="PackedScene" uid="uid://c7iekha7c8pps" path="res://Scenes/wheel_of_fortune.tscn" id="4_jcmya"]
 [ext_resource type="Script" uid="uid://f07p7jlkk0fu" path="res://Scenes/win_controller.gd" id="5_i7grj"]
