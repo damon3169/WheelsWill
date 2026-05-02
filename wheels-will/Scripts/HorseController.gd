@@ -4,6 +4,7 @@ extends Area2D
 @export var acceleration = 50
 var gameIsWon = false
 var nextRoomButton
+var animationState = "Run"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,17 +17,22 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if !gameIsWon:
+		get_child(1).animation = animationState
 		position.x+=speed*delta
+	else:
+		get_child(1).animation = "Idle"
+		pass
 
 func horseAcceleration() ->void:
 	speed+=acceleration
+	animationState = "Boost"
+	print(animationState)
 	await get_tree().create_timer(1).timeout
 	speed-=acceleration
+	animationState = "Run"
 	pass
 
 func emit_nextRound() ->void:
 	gameIsWon = false
-	var horseGroup = get_tree().get_nodes_in_group("HorseGroup")
-	for i in range(len(horseGroup)):
-		horseGroup[i].position.x = 0
+	self.position.x = 0
 	pass

@@ -1,37 +1,10 @@
 [gd_scene format=3 uid="uid://c5cdgjbjbanm2"]
 
 [ext_resource type="Script" uid="uid://ckga3f8ony2ss" path="res://Scripts/player_movement.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://bqir38g7ip1vi" path="res://Sprites/Chara/spritesheet_J0.png" id="2_fkybt"]
+[ext_resource type="SpriteFrames" uid="uid://ic7ohq4pc8xo" path="res://Sprites/Chara/Chara_J0.tres" id="2_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cl6l8rssjh04g" path="res://Sprites/UI/xbox_button_color_a.png" id="3_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cswomnmkdjh5k" path="res://Sprites/UI/xbox_lb.png" id="4_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://c27ny7fk7d0kf" path="res://Sprites/UI/xbox_rb.png" id="5_3smsa"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
-atlas = ExtResource("2_fkybt")
-region = Rect2(500, 0, 500, 500)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
-atlas = ExtResource("2_fkybt")
-region = Rect2(1000, 0, 500, 500)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_7dp3o"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x3wgy")
-}],
-"loop": true,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3smsa")
-}],
-"loop": true,
-"name": &"Walking",
-"speed": 5.0
-}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fkybt"]
 radius = 23.0
@@ -49,7 +22,7 @@ script = ExtResource("1_cvnsp")
 unique_name_in_owner = true
 position = Vector2(0, 15)
 scale = Vector2(0.2, 0.2)
-sprite_frames = SubResource("SpriteFrames_7dp3o")
+sprite_frames = ExtResource("2_fkybt")
 animation = &"Walking"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663686894]

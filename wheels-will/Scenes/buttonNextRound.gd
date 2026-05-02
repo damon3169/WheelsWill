@@ -17,4 +17,5 @@ func _on_pressed() -> void:
 		nextRound.emit()
 		hide()
 	else:
-		print("GameEnd")
+		var players = get_tree().get_nodes_in_group("Players")
+		get_tree().change_scene_to_file("res://Scenes/ScreenMockup.tscn")
